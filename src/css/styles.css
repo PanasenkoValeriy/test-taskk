@@ -6,6 +6,18 @@
 */
 @import url('./base/reset.css');
 @import url('./base/common.css');
+@import url('./layout/header.css');
+@import url('./layout/check-year.css');
+@import url('./layout/guess.css');
+@import url('./layout/rps.css');
+@import url('./layout/calculator.css');
+@import url('./layout/time-calc.css');
+@import url('./layout/dino.css');
+@import url('./layout/football.css');
+@import url('./layout/three-numbers.css');
+@import url('./layout/team.css');
+@import url('./layout/scientist.css');
+@import url('./layout/footer.css');
 
 
 :root {
