@@ -1,14 +1,41 @@
-section:not(:first-child:last-child) {
-    padding-bottom: 36px;
-    padding-top: 36px;
-    border-bottom: #000;
+#line {
+    width: 536px;
+    height: 0px;
+    flex-shrink: 0;
+    stroke-width: 1px;
+    color: #000;   
+    
+    margin-top: 36px;
+    margin-bottom: 36px;
 }
 
 h2 {
+    display: flex;
+    justify-content: center;
     color: #000;
     font-family: "Montserrat Alternates";
     font-size: 16px;
-    font-style: normal;
     font-weight: 400;
-    line-height: normal;
+}
+
+.input-box {
+
+}
+
+input {
+    display: inline-flex;
+    padding: 10px 45px 10px 10px;
+    align-items: flex-start;
+    gap: 10px;
+    border-radius: 20px;
+    background: #D7D7D7;
+    border: none;
+
+    font-family: "Montserrat Alternates";
+    font-size: 12px;
+    font-weight: 400;
+}
+
+input:focus : {
+    border: none;
 }
