@@ -1,0 +1,29 @@
+<div class="container">
+  <div class="game">
+    <div class="choice">
+      <h2 class="rps__title">Камінь - ножиці - папір</h2>
+      <ul class="rps__list">
+        <li class="rps__item">
+          <button class="rps__list__btn" data-choice="Rock">
+            <svg class="rps__icon"><use href=""></use></svg>
+          </button>
+        </li>
+        <li class="rps__item">
+          <button class="rps__list__btn" data-choice="Paper">
+            <svg class="rps__icon"><use href=""></use></svg>
+          </button>
+        </li>
+        <li class="rps__item">
+          <button class="rps__list__btn" data-choice="Scissors">
+            <svg class="rps__icon"><use href=""></use></svg>
+          </button>
+        </li>
+      </ul>
+      <p class="score">Рахунок:</p>
+      <p class="score__computer">Комп’ютер - <span id="comp__score"></span></p>
+      <p class="score__player">Гравець - <span id="player__score"></span></p>
+      <p><span id="winner"></span></p>
+      <button class="rps__btn">Варіант комп’ютера</button>
+    </div>
+  </div>
+</div>
