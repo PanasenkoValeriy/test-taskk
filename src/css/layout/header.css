@@ -1,0 +1,21 @@
+.logo {}
+
+.logo__container{
+    display: flex;
+}
+
+.logo__text {
+    display: block;
+}
+
+.logo__img {}
+
+.nav__list {}
+
+.nav__list__item {}
+
+.day__mode {}
+
+.night__mode {}
+
+.greeting {}
