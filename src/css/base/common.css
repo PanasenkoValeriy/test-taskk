@@ -1,3 +1,15 @@
+main {
+    background-image: url('../../img/background.png');
+    background-size: cover;
+    height: 3456.876px;
+}
+
+.container {
+    margin: 0 auto;
+    width: 1090px;
+    background-color: #fff;
+}
+
 #line {
     width: 536px;
     height: 0px;
@@ -34,10 +46,9 @@ h2 {
     border-radius: 0px 20px 20px 0px;
     background: #000;
 
-    position: relative;
-    right: 35px;
+    
 
-    height: 100%;
+    
     width: 35px;
 }
 

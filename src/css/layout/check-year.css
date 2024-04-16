@@ -21,6 +21,7 @@
 .check-container {
     display: flex;
     justify-content: center;
+    text-align: center;
 }
 
 .input-box {
@@ -42,5 +43,9 @@
 
 
 .check-text {
-
+    color: #900;
+    text-align: right;
+    font-family: "Montserrat Alternates";
+    font-size: 12px;
+    font-weight: 400;
 }
