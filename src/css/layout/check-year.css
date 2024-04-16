@@ -11,7 +11,7 @@
 
 .check-year-section {
     
-    width: 576px;
+    
 }
 
 .check-title {
@@ -19,22 +19,27 @@
 }
 
 .check-container {
-
+    display: flex;
+    justify-content: center;
 }
 
 .input-box {
+    display: flex;
+    align-items: center;
 
+    margin-right: 149px;
+    height: 35px;
 }
 
 .check-input {
-
+    
 }
 
-.lupa {
-    width: 15px;
-    height: 15px;
-    background-color: #000;
+.check-button {
+    
 }
+
+
 
 .check-text {
 

@@ -18,9 +18,32 @@ h2 {
     font-weight: 400;
 }
 
+.lupa {
+    display: inline-flex;
+    padding: 10px;
+    align-items: flex-start;
+    gap: 10px;
+    height: 15px;    
+}
+
+.search-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 0px 20px 20px 0px;
+    background: #000;
+
+    position: relative;
+    right: 35px;
+
+    height: 100%;
+    width: 35px;
+}
+
 input {
     display: inline-flex;
-    padding: 10px 45px 10px 10px;
+    padding: 10px 55px 10px 10px;
     align-items: flex-start;
     gap: 10px;
     border-radius: 20px;
@@ -31,4 +54,8 @@ input {
     font-family: "Montserrat Alternates";
     font-size: 12px;
     font-weight: 400;
+}
+
+button {
+    border: none;
 }

@@ -1,0 +1,31 @@
+.time-calc-section {
+}
+.time-title {
+}
+.time-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.time-box {
+    display: flex;
+    align-items: center;
+
+    height: 35px;
+}
+
+.time-input {
+    width: 94px;
+}
+.search-button {
+}
+.lupa {
+}
+
+.time-dots {
+    margin-right: 33px;
+}
+
+.time-text {
+}
