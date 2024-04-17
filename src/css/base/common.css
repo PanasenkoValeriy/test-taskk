@@ -1,3 +1,11 @@
+body {
+    font-family: "Montserrat Alternates";
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
 main {
     background-image: url('../../img/background.png');
     background-size: cover;
