@@ -15,7 +15,7 @@ main {
 .container {
     margin: 0 auto;
     width: 1090px;
-    background-color: #fff;
+    background-color: var(--main__color);
 }
 
 #line {
