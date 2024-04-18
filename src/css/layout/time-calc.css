@@ -1,11 +1,17 @@
 .time-calc-section {
+
 }
+
 .time-title {
+    margin-bottom: 36px;
 }
+
 .time-container {
     display: flex;
     justify-content: center;
     align-items: center;
+
+    gap: 33px;
 }
 
 .time-box {
@@ -18,9 +24,17 @@
 .time-input {
     width: 94px;
 }
-.search-button {
+
+.time-input-box {
+    width: 151px;
 }
+
+.search-button {
+
+}
+
 .lupa {
+
 }
 
 .time-dots {
@@ -28,4 +42,5 @@
 }
 
 .time-text {
+
 }
