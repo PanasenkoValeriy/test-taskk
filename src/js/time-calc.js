@@ -6,4 +6,3 @@ const result = document.querySelector('.time-text');
 //     seconds: input.value / 60,
 //     minutes:
 // }
-
