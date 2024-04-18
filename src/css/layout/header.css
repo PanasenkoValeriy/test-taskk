@@ -1,21 +1,63 @@
+.header__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 70px;
+}
+
 .logo {}
 
 .logo__container{
     display: flex;
 }
 
+.logo__coding {
+    padding-top: 23px;
+    font-size: 12px;
+}
+
+.logo__magic {
+    font-size: 12px;
+    font-family: Sacramento;
+    margin-left: 14px;
+    margin-top: -17px;
+}
+
 .logo__text {
     display: block;
 }
 
-.logo__img {}
+.logo__img { 
+    margin-right: 9px;
+    margin-top: 17px;
+}
 
-.nav__list {}
+.nav__list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+    margin-top: 17px;
+}
+
+.interactive {
+    display: flex;
+}
+
+.header__arrow {
+    margin-left: 8px;
+}
 
 .nav__list__item {}
 
-.day__mode {}
+.day__mode { 
+    margin-top: 17px;
+}
 
-.night__mode {}
+.night__mode {
+    margin-top: 17px;
+}
 
-.greeting {}
+.greeting {
+    margin-top: 17px;
+}
