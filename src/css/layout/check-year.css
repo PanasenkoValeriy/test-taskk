@@ -6,41 +6,29 @@
 
     display: flex;
     justify-content: center;
-    padding-bottom: 36px;
 }
 
-.check-year-section {
-    
-    
-}
 
 .check-title {
-
+    margin-bottom: 36px;
 }
 
 .check-container {
-    display: flex;
-    justify-content: center;
-    text-align: center;
-}
+    margin: 0 auto;
+    width: 576px;
 
-.input-box {
     display: flex;
+    justify-content: space-between;
     align-items: center;
-
-    margin-right: 149px;
-    height: 35px;
 }
 
 .check-input {
-    
+    width: 160px;
 }
 
-.check-button {
-    
+.check-input-box {
+    width: 215px;
 }
-
-
 
 .check-text {
     color: #900;
