@@ -10,8 +10,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sacramento&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css.">
-    <script type="module" crossorigin src="/game-center/assets/index-61bdf2c3.js"></script>
-    <link rel="stylesheet" href="/game-center/assets/index-92b64c99.css">
+    <script type="module" crossorigin src="/game-center/assets/index-801d2214.js"></script>
+    <link rel="stylesheet" href="/game-center/assets/index-91a4e9de.css">
   </head>
   <body>
     
@@ -19,7 +19,7 @@
     <!-- Loads the specified .html file -->
     <header class="header">
   <nav class="nav">
-    <div class="container">
+    <div class="container header__container">
       <a href="" class="logo">
         <div class="logo__container">
           <img src="/game-center/assets/logo-3cf18fc4.svg" alt="logo" class="logo__img" />
@@ -30,8 +30,8 @@
         </div>
       </a>
       <ul class="nav__list">
-        <li class="nav__list__item interactive">
-          <a href=""
+        <li class="nav__list__item">
+          <a class="interactive" href=""
             >Інтерактив<img
               src="/game-center/assets/arrow below-b0162b36.svg"
               alt="arrow"
@@ -72,26 +72,50 @@
   <div class="game">
     <div class="choice">
       <h2 class="rps__title">Камінь - ножиці - папір</h2>
-      <ul class="rps__list">
-        <li class="rps__item">
-          <button class="rps__list__btn" data-choice="Rock">
-            <svg class="rps__icon"><use href=""></use></svg>
-          </button>
-        </li>
-        <li class="rps__item">
-          <button class="rps__list__btn" data-choice="Paper">
-            <svg class="rps__icon"><use href=""></use></svg>
-          </button>
-        </li>
-        <li class="rps__item">
-          <button class="rps__list__btn" data-choice="Scissors">
-            <svg class="rps__icon"><use href=""></use></svg>
-          </button>
-        </li>
-      </ul>
-      <p class="score">Рахунок:</p>
-      <p class="score__computer">Комп’ютер - <span id="comp__score"></span></p>
-      <p class="score__player">Гравець - <span id="player__score"></span></p>
+      <div class="choices__score__container">
+        <ul class="rps__list">
+          <li class="rps__item">
+            <button class="rps__list__btn" data-choice="Rock">
+              <img
+                width="40px"
+                src="/game-center/assets/rock-d9390922.svg"
+                alt="rock"
+                class="rps__icon"
+              />
+            </button>
+          </li>
+
+          <li class="rps__item">
+            <button class="rps__list__btn" data-choice="Scissors">
+              <img
+                width="40px"
+                src="/game-center/assets/scissors-55d3cf71.svg"
+                alt="scissors"
+                class="rps__icon"
+              />
+            </button>
+          </li>
+          <li class="rps__item">
+            <button class="rps__list__btn" data-choice="Paper">
+              <img
+                width="40px"
+                src="/game-center/assets/paper-2c852eaf.svg"
+                alt="paper"
+                class="rps__icon"
+              />
+            </button>
+          </li>
+        </ul>
+        <div class="score__container">
+          <p class="score">Рахунок:</p>
+          <p class="score__computer">
+            Комп’ютер - <span id="comp__score"></span>
+          </p>
+          <p class="score__player">
+            Гравець - <span id="player__score"></span>
+          </p>
+        </div>
+      </div>
       <p><span id="winner"></span></p>
       <button class="rps__btn">Варіант комп’ютера</button>
     </div>
