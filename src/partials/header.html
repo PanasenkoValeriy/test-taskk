@@ -4,26 +4,35 @@
       <a href="" class="logo">
         <div class="logo__container">
           <img src="/img/logo.svg" alt="logo" class="logo__img" />
-          <div class="logo__text">
-            <p class="logo__coding">Coding</p>
-            <p class="logo__magic">Magic</p>
-          </div>
         </div>
       </a>
       <ul class="nav__list">
         <li class="nav__list__item">
           <a class="interactive" href=""
-            >Інтерактив<img
-              src="/img/arrow below.svg"
-              alt="arrow"
-              class="header__arrow"
+            >Інтерактив
+            <img src="/img/arrow below.svg" alt="arrow" class="header__arrow"
           /></a>
+          <ul class="submenu__list">
+            <li class="submenu__item">
+              <a href="" class="submenu__link">Числовий</a>
+            </li>
+            <li class="submenu__item">
+              <a href="" class="submenu__link">Ігровий</a>
+            </li>
+            <li class="submenu__item">
+              <a href="" class="submenu__link">Ознайомчий </a>
+            </li>
+          </ul>
         </li>
         <li class="nav__list__item"><a href="">Наша команда</a></li>
         <li class="nav__list__item"><a href="">Контакти</a></li>
       </ul>
-      <img src="/img/day mode.svg" alt="day mode" class="day__mode" />
-      <img src="/img/night mode.svg" alt="night mode" class="night__mode" />
+      <img
+        src="/img/day mode.svg"
+        alt="day mode"
+        class="switch__theme"
+        id="icon"
+      />
       <p class="greeting">Вітаємо, <span id="user__name">User</span></p>
     </div>
   </nav>
