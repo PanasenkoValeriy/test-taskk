@@ -10,8 +10,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sacramento&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css.">
-    <script type="module" crossorigin src="/game-center/assets/index-801d2214.js"></script>
-    <link rel="stylesheet" href="/game-center/assets/index-91a4e9de.css">
+    <script type="module" crossorigin src="/game-center/assets/index-dd2ad717.js"></script>
+    <link rel="stylesheet" href="/game-center/assets/index-74bc76b9.css">
   </head>
   <body>
     
@@ -125,21 +125,24 @@
         <hr id="line" noshade="" color="#000">
         <section class="calculator-section">
     <h2>Калькулятор</h2>
-    <form action="">
-        <input class="calculator-input" type="number" placeholder="Введіть число">
-        <button class="calculator-button"></button>
-        <button class="calculator-button"></button>
-        <button class="calculator-button"></button>
-        <button class="calculator-button"></button>
-        <input class="calculator-input" type="number" placeholder="Введіть число">
-        <button class="calculator-equals"></button>
+    <form class='calculator-form' action="">
+        <input class="calculator-input" placeholder="Введіть число">
+        <ul class="calculator-buttons-list">
+            <li class="calculator-buttons-list-item"><button class="calculator-button">+</button></li>
+            <li class="calculator-buttons-list-item"><button class="calculator-button">*</button></li>
+            <li class="calculator-buttons-list-item"><button class="calculator-button">-</button></li>
+            <li class="calculator-buttons-list-item"><button class="calculator-button">/</button></li>
+          </ul>
+          
+        <input class="calculator-input" placeholder="Введіть число">
+        <button class="calculator-equals">=</button>
 
 
 
     </form>
 
 
-    <p class="calculator-output" type="number" placeholder="Результат"><p>
+    <p class="calculator-output">Результат<p>
 </section>
         <hr id="line" noshade="" color="#000">
         <section class="time-calc-section">
