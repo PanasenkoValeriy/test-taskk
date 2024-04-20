@@ -3,9 +3,14 @@ const icon = document.getElementById('icon');
 icon.addEventListener('click', onIconClick)
 
 function onIconClick() {
-    document.body.classList.toggle('dark__theme');
+    document.body.classList.toggle('night-mode');
 
-    if (document.classList.classList.contains('dark__theme')) {
-        icon.src = '/img/night mode.svg'
+    if (document.body.classList.contains('night-mode')) {
+        icon.src = '/img/night-mode.svg'
+    }
+    else {
+        icon.src = '/img/day-mode.svg'
     }
 }
+
+

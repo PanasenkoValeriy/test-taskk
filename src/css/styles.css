@@ -35,10 +35,10 @@
   -webkit-text-size-adjust: 100%;
 
   --main__color: #FFF;
-  --secondary__color: #000;
+  --secondary__color: #000000;
 }
 
-.dark__theme {
-    --main__color: #000;
+.night-mode {
+    --main__color: #000000;
     --secondary__color: #FFF;
 }
