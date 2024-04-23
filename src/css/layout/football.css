@@ -1,0 +1,20 @@
+.football__title {
+    color: var(--secondary__color);
+    margin-bottom: 36px;
+}
+
+.box {
+    width: 720px;
+    height: 220px;
+    border-radius: 37px;
+    border: 2px solid var(--secondary__color);   
+    background: #5ABB58;
+    margin: 0 auto;
+    position: relative;
+}
+
+.football__img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
