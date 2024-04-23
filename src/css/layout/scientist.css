@@ -1,0 +1,74 @@
+.scientist-section {
+    
+}
+
+.scientist-container {
+    /* display: flex;
+    justify-content: center; */
+}
+
+.scientist-title {
+    margin-bottom: 36px;
+}
+
+.scientist-card-list {
+    width: 636px;
+
+    margin: 0 auto;
+
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    gap: 36px 59px;
+
+    margin-bottom: 36px;
+}
+
+.scientist-card {
+    width: 100px;
+    height: 100px;
+    flex-shrink: 0;
+
+    border-radius: 20px;
+    background: #D9D9D9;
+}
+
+.scientist-card-text {
+}
+
+.scientist-option-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    gap: 20px 36px;
+    
+}
+
+.scientist-option-item {
+    flex-basis: calc((100% - 36px) / 2);
+}
+
+.scientist-option-item:nth-child(3n + 1) {
+    
+    
+}
+
+
+.scientist-option-button {
+    color: #FFF;
+    font-family: "Montserrat Alternates";
+    font-size: 12px;
+    
+    font-weight: 400;
+    
+
+    
+    padding: 10px 20px;
+
+    border-radius: 20px;
+    background: #000;
+    box-shadow: 3px 3px 0px 0px rgba(0, 0, 0, 0.25);
+    text-align: start;
+}
