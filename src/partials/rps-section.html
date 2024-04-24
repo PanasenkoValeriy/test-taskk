@@ -4,11 +4,44 @@
     <ul class="rps__list">
       <li class="rps__item">
         <button class="rps__list__btn" data-choice="Rock">
-          <img width="40px" src="/img/rock.svg" alt="rock" class="rps__icon" />
+          <img
+            width="40px"
+            src="/img/rock.svg"
+            alt="rock"
+            class="rps__icon"
+          />
         </button>
       </li>
 
-
+      <li class="rps__item">
+        <button class="rps__list__btn" data-choice="Scissors">
+          <img
+            width="40px"
+            src="/img/scissors.svg"
+            alt="scissors"
+            class="rps__icon"
+          />
+        </button>
+      </li>
+      <li class="rps__item">
+        <button class="rps__list__btn" data-choice="Paper">
+          <img
+            width="40px"
+            src="/img/paper.svg"
+            alt="paper"
+            class="rps__icon"
+          />
+        </button>
+      </li>
+    </ul>
+    <div class="score__container">
+      <p class="score">Рахунок:</p>
+      <p class="score__computer">
+        Комп’ютер - <span id="comp__score">0</span>
+      </p>
+      <p class="score__player">
+        Гравець - <span id="player__score">0</span>
+      </p>
     </div>
   </div>
   <p><span id="winner"></span></p>
