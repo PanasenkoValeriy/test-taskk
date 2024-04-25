@@ -50,9 +50,8 @@
     flex-basis: calc((100% - 36px) / 2);
 }
 
-.scientist-option-item:nth-child(3n + 1) {
-    
-    
+.scientist-option-item:nth-child(odd):not(:last-child) { 
+    text-align: end;
 }
 
 
