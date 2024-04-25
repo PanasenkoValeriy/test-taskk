@@ -11,7 +11,7 @@
     align-items: center;
 }
 
-.calculator-input {
+.first-calculator-input, .second-calculator-input {
     margin: 38px;
 }
 
