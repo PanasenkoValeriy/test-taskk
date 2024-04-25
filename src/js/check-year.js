@@ -2,9 +2,7 @@ const button = document.querySelector('.check-btn-js');
 const input = document.querySelector('.check-input');
 const result = document.querySelector('.check-text');
 
-button.addEventListener('click', showResult);
-
-function showResult() {
+button.onclick = function showResult() {
     if(input.value !== '' && Number(input.value)) {
         if(input.value % 4 === 0) {
             result.textContent = 'Ви народилися у високосний рік!';

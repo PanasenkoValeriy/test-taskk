@@ -1,3 +1,4 @@
+
 const calculatorButtons = document.querySelectorAll(".calculator-button");
 const calculatorOutput = document.querySelector(".calculator-output");
 const checkButton = (buttons) =>

@@ -1,4 +1,4 @@
-const btns = document.querySelector('.rps__list__btn');
+const btns = document.querySelectorAll('.rps__list__btn');
 const computerScore = document.querySelector('.comp__score');
 const playerScore = document.querySelector('.player__score');
 const winner = document.getElementById('winner');
@@ -8,10 +8,10 @@ let playerChoice = '';
 let computerChoice = '';
 
 const losingString = 'Комп’ютер виграв раунд!';
-losingString.style.color = 'red';
+// losingString.style.color = 'red';
 
 const winningString = 'Ви виграли раунд!';
-winningString.style.color = 'green';
+// winningString.style.color = 'green';
 
 btns.forEach((btn) => {
     btn.addEventListener('click', () => {

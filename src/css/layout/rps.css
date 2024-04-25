@@ -1,19 +1,13 @@
-.rps__title {
-    margin-bottom: 36px;
-    color: var(--secondary__color);
+.choices__score__container {
+    display: flex;
+    margin-left: 417px;
 }
 
 .rps__list {
     display: flex;
-    justify-content: center;
     align-items: center;
     gap: 38px;
     margin-right: 104px;
-}
-
-.rps__container {
-    display: flex;
-    justify-content: center;
 }
 
 .rps__item {}
@@ -37,11 +31,6 @@
     color: var(--secondary__color);
 }
 
-.choices__score__container {
-    display: flex;
-    justify-content: center;
-}
-
 .score {}
 
 .score__computer {}
@@ -49,6 +38,8 @@
 .score__player {}
 
 .rps__btn {
+    display: block;
+    margin: 0 auto;
     width: 182px;
     height: 35px;
     border-radius: 20px;

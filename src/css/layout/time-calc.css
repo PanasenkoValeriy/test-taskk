@@ -18,7 +18,7 @@
 }
 
 .time-input {
-    width: 94px;
+    width: 150px;
 }
 
 .time-input-box {
@@ -26,11 +26,13 @@
 }
 
 .time-dots {
-    margin-right: 33px;
+    
 }
 
 .time-text {
-    color: #900;
+    display: flex;
+
+    color: var(--secondary__color);
     text-align: right;
     font-family: "Montserrat Alternates";
     font-size: 12px;
