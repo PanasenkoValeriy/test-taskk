@@ -15,7 +15,10 @@ calculatorButtons.forEach((button) => {
       btn.classList.remove("active-calc-btn");
     });
     button.classList.toggle("active-calc-btn");
-    console.log(checkButton(calculatorButtons));
+
+    button.addEventListener('click', () => {
+      button.classList.toggle("active-calc-btn");
+    });
   });
 });
 
