@@ -32,19 +32,31 @@ const calculateResult = () => {
 
   if (checkButton(calculatorButtons).includes("plus")) {
     calculatorOutput.textContent = firstInputValue + secondInputValue;
+    if (isNaN(firstInputValue + secondInputValue)) {
+      calculatorOutput.textContent = 'Помилка'
+    }
   }
-   else if (checkButton(calculatorButtons).includes("minus")) {
+  else if (checkButton(calculatorButtons).includes("minus")) {
     calculatorOutput.textContent = firstInputValue - secondInputValue;
+    if (isNaN(firstInputValue - secondInputValue)) {
+      calculatorOutput.textContent = 'Помилка'
+    }
   }
-  
-     else if (checkButton(calculatorButtons).includes("divide")) {
+
+  else if (checkButton(calculatorButtons).includes("divide")) {
     calculatorOutput.textContent = firstInputValue / secondInputValue;
+    if (isNaN(firstInputValue.secondInputValue)) {
+      calculatorOutput.textContent = 'Помилка'
+    }
   }
-  
-     else if (checkButton(calculatorButtons).includes("multiply")) {
+
+  else if (checkButton(calculatorButtons).includes("multiply")) {
     calculatorOutput.textContent = firstInputValue * secondInputValue;
+    if (isNaN(firstInputValue * secondInputValue)) {
+      calculatorOutput.textContent = 'Помилка'
+    }
   }
-  
+
 };
 
 
