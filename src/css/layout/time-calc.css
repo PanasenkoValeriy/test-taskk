@@ -10,12 +10,12 @@
     gap: 33px;
 }
 
-.time-box {
+/* .time-box {
     display: flex;
     align-items: center;
 
     height: 35px;
-}
+} */
 
 .time-input {
     width: 150px;

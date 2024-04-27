@@ -1,0 +1,16 @@
+.guess__input__box {
+    width: 150px;
+    margin-left: 257px;
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+
+.guess__input {
+    width: 150px;
+}
+
+.guess__text {
+    margin-left: 202px;
+    white-space: nowrap;
+}
