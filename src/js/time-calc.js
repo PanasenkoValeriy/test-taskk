@@ -9,33 +9,38 @@ days.style.marginRight = '5px';
 
 
 button.onclick = function converter() {
-    const daysConvertor = Math.floor(input.value / (24 * 60));
-    const hoursConvertor = Math.floor((input.value - daysConvertor * 24 * 60) / 60);
-    const minutesConvertor = Math.floor(input.value - (daysConvertor * 24 * 60 + hoursConvertor * 60));
-    const secondsConvertor = Math.floor((input.value - (daysConvertor * 24 * 60 + hoursConvertor * 60 + minutesConvertor)) * 60);
+    if(input.value !== '' && Number(input.value)) {
+        const daysConverter = Math.floor(input.value / (24 * 60));
+        const hoursConverter = Math.floor((input.value - daysConverter * 24 * 60) / 60);
+        const minutesConverter = Math.floor(input.value - (daysConverter * 24 * 60 + hoursConverter * 60));
+        const secondsConverter = Math.floor((input.value - (daysConverter * 24 * 60 + hoursConverter * 60 + minutesConverter)) * 60);
 
-    days.textContent = `${daysConvertor} дн.`;
-
-    if (hoursConvertor >= 10) {
-        hours.textContent = `${hoursConvertor}:`;
+        days.textContent = `${daysConverter} дн.`;
+    
+        if (hoursConverter >= 10) {
+            hours.textContent = `${hoursConverter}:`;
+        } else {
+            hours.textContent = `0${hoursConverter}:`;
+        }
+    
+        if (minutesConverter >= 10) {
+            minutes.textContent = `${minutesConverter}:`;
+        } else {
+            minutes.textContent = `0${minutesConverter}:`;
+        }
+    
+        if (secondsConverter >= 10) {
+            seconds.textContent = `${secondsConverter}`;
+        } else {
+            seconds.textContent = `0${secondsConverter}`;
+        }
     } else {
-        hours.textContent = `0${hoursConvertor}:`;
-    }
-
-    if (minutesConvertor >= 10) {
-        minutes.textContent = `${minutesConvertor}:`;
-    } else {
-        minutes.textContent = `0${minutesConvertor}:`;
-    }
-
-    if (secondsConvertor >= 10) {
-        seconds.textContent = `${secondsConvertor}`;
-    } else {
-        seconds.textContent = `0${secondsConvertor}:`;
+        result.textContent = 'Введіть кількість хвилин!'
+        result.style.color = '#FF0000';
     }
     
-    
+    input.value = '';
 
-    // result.textContent = `${daysConvertor} дн. ${hoursConvertor}:${minutesConvertor}:${secondsConvertor}`
+    // result.textContent = `${daysConverter} дн. ${hoursConverter}:${minutesConverter}:${secondsConverter}`
 
 }

@@ -84,3 +84,7 @@ const scientists = [
       id: 12,
     },
   ];
+
+
+const card = document.querySelectorAll('.scientist-card');
+const button = document.querySelector('.scientist-option-button');
