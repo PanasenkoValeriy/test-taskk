@@ -19,8 +19,8 @@
       referrerpolicy="no-referrer"
     />
     
-    <script type="module" crossorigin src="/game-center/assets/index-dc94fd22.js"></script>
-    <link rel="stylesheet" href="/game-center/assets/index-78259c8b.css">
+    <script type="module" crossorigin src="/game-center/assets/index-a2abe78b.js"></script>
+    <link rel="stylesheet" href="/game-center/assets/index-d4774575.css">
   </head>
   <body>
     <!-- Loads the specified .html file -->
@@ -72,20 +72,44 @@
         <h1 id="mainTitle">Популярні інтерактивні ігри</h1>
         <hr id="line" noshade="" color="#000" />
         <section class="check-year-section">
-    <h2 class="check-title">Перевір в який рік ти народився</h2>
-    <div class="check-container">
-        <div class="input-box check-input-box">
-            <input type="text" placeholder="Введіть рік народження" class="check-input">
-            <button onclick="showResult()" type="button" class="search-button check-btn-js">
-                <img class="lupa" src="../img/lupa.svg" alt="">
-            </button>
-        </div>
-        <p class="check-text"></p>
+  <h2 class="check-title">Перевір в який рік ти народився</h2>
+  <div class="check-container">
+    <div class="input-box check-input-box">
+      <input
+        type="text"
+        placeholder="Введіть рік народження"
+        class="check-input"
+      />
+      <button
+        onclick="showResult()"
+        type="button"
+        class="search-button check-btn-js"
+      >
+        <img class="lupa" src="../img/lupa.svg" alt="" />
+      </button>
     </div>
-    
+    <p class="check-text"></p>
+  </div>
 </section>
+
         <hr id="line" noshade="" color="#000" />
-        
+        <section class="guess__section">
+  <h2 class="guess__title">Вгадай число, яке загадав комп’ютер</h2>
+  <div class="input-box guess__input__box">
+    <input
+      type="text"
+      id="guess__input"
+      class="guess__input"
+      placeholder="Введіть число"
+      data-min-length="1"
+    />
+    <button class="search-button" id="guess__btn" type="button">
+      <img class="lupa" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAADESURBVHgBtVIBDcJADCwomISXgISXgINNAg54B8MBOJiEIQEHkzAclHb0k/Lp+gvJLmmyfa93328BFBAxUgwUM34xy/8ZaiBSjz76LcXsmCiCnAeKi7rR3SqOqvi0YhCUSCyTgyQS+C0m4Y1lIiuHikCTb1omFsAGWNwjxVuSoVLcWOcs8JLvDnzkXXiWynoKAWx3nsIkvNYiPJRIq/aAH+6Kv5tpmjD5hj6yyOSJdDznwnGUNnUb6yIedhE5wB8Q52WlP31IheF+VqWXAAAAAElFTkSuQmCC" alt="lupa" />
+    </button>
+    <p id="text" class="guess__text">Введіть число від 1 до 10!</p>
+  </div>
+</section>
+
         <hr id="line" noshade="" color="#000" />
         <section class="game">
   <h2 class="rps__title">Камінь - ножиці - папір</h2>
