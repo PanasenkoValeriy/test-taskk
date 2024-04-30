@@ -6,7 +6,6 @@ const minutes = document.getElementById('minutes');
 const seconds = document.getElementById('seconds');
 const result = document.querySelector('.time-text');
 
-days.style.marginRight = '5px';
 
 
 button.onclick = function converter() {
@@ -17,7 +16,7 @@ button.onclick = function converter() {
         const secondsConverter = Math.floor((input.value - (daysConverter * 24 * 60 + hoursConverter * 60 + minutesConverter)) * 60);
 
         days.textContent = `${daysConverter} дн.`;
-    
+        
         if (hoursConverter >= 10) {
             hours.textContent = `${hoursConverter}:`;
         } else {
