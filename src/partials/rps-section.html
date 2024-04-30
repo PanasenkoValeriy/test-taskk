@@ -3,18 +3,13 @@
   <div class="choices__score__container">
     <ul class="rps__list">
       <li class="rps__item">
-        <button class="rps__list__btn" data-choice="Rock">
-          <img
-            width="40px"
-            src="/img/rock.svg"
-            alt="rock"
-            class="rps__icon"
-          />
+        <button class="rps__list__btn" data-choice="rock">
+          <img width="40px" src="/img/rock.svg" alt="rock" class="rps__icon" />
         </button>
       </li>
 
       <li class="rps__item">
-        <button class="rps__list__btn" data-choice="Scissors">
+        <button class="rps__list__btn" data-choice="scissors">
           <img
             width="40px"
             src="/img/scissors.svg"
@@ -24,7 +19,7 @@
         </button>
       </li>
       <li class="rps__item">
-        <button class="rps__list__btn" data-choice="Paper">
+        <button class="rps__list__btn" data-choice="paper">
           <img
             width="40px"
             src="/img/paper.svg"
@@ -36,14 +31,10 @@
     </ul>
     <div class="score__container">
       <p class="score">Рахунок:</p>
-      <p class="score__computer">
-        Комп’ютер - <span id="comp__score">0</span>
-      </p>
-      <p class="score__player">
-        Гравець - <span id="player__score">0</span>
-      </p>
+      <p class="score__computer">Комп’ютер - <span id="comp__score">0</span></p>
+      <p class="score__player">Гравець - <span id="player__score">0</span></p>
     </div>
   </div>
-  <p><span id="winner"></span></p>
+  <p class="winner" id="winner">Оберіть варіант ходу!</p>
   <button class="rps__btn">Варіант комп’ютера</button>
 </section>

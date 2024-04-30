@@ -54,3 +54,10 @@
     color: black;
     border: 1px solid black;
 }
+
+.winner {
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    color: var(--secondary__color);
+}

@@ -1,46 +1,37 @@
-// const btns = document.querySelectorAll('.rps__list__btn');
-// const computerScore = document.querySelector('.comp__score');
-// const playerScore = document.querySelector('.player__score');
-// const winner = document.getElementById('winner');
-// const resultBtn = document.querySelector('.rps__btn');
+const choices = ['rock', 'scissors', 'paper'];
+const buttons = document.querySelectorAll('.rps__list__btn');
+const winner = document.querySelector('.winner');
+const computerScore = document.getElementById('comp__score');
+const playerScore = document.getElementById('player__score');
+const resultBtn = document.querySelector('.rps__btn');
 
-// let playerChoice = '';
-// let computerChoice = '';
+buttons.forEach(button => {
+    button.addEventListener('click', () => {
+        const userChoice = button.dataset.choice;
+        const computerChoice = choices[Math.floor(Math.random() * choices.length)];
+        const result = generateWinner(userChoice, computerChoice);
+    });
+});
 
-// const losingString = 'Комп’ютер виграв раунд!';
-// // losingString.style.color = 'red';
+function generateWinner(userChoice, computerChoice) {
+    if (userChoice === computerChoice) {
+        winner.textContent = 'Нічия';
+        winner.style.volor = '#000';
+    } else if (
+        (userChoice === 'камінь' && computerChoice === 'ножиці') ||
+        (userChoice === 'ножиці' && computerChoice === 'папір') ||
+        (userChoice === 'папір' && computerChoice === 'камінь')
+    ) {
+        winner.textContent = 'Ви виграли раунд!';
+        winner.style.color = '#039900';
+        playerScore.textContent += 1;
+    } else {
+        winner.textContent = 'Комп’ютер виграв раунд!';
+        winner.style.color = '#FF0000';
+        computerScore.textContent += 1;
+    }
+}
 
-// const winningString = 'Ви виграли раунд!';
-// // winningString.style.color = 'green';
-
-// btns.forEach((btn) => {
-//     btn.addEventListener('click', () => {
-//         playerChoice = btn.dataset.choice;
-//         computerChoice = generateComputerChoice();
-//         const winner = generateWinner(playerChoice, computerChoice);
-//     });
-// });
-
-// function generateComputerChoice() {
-//     const choices = ['rock', 'paper', 'scissors'];
-//     const randomChoice = Math.floor(Math.random() * choices.length);
-//     return choices[randomChoice];
-// };
-
-// function generateWinner(playerChoice, computerChoice) {
-//     if (playerChoice === computerChoice) {
-//         return 'Нічия!';
-//     } else if ((computerChoice === 'rock' && playerChoice === 'scissors') ||
-//         (computerChoice === 'scissors' && playerChoice === 'paper') ||
-//         (computerChoice === 'paper' && playerChoice === 'rock')) {
-//         return losingString;
-//         computerScore.textContent += 1;
-//     } else {
-//         return winningString;
-//         playerScore.textContent += 1;
-//     }
-// };
-
-// resultBtn.addEventListener('click', () => {
-//     computerChoice.style.borderColor = 'green';
-// });
+resultBtn.addEventListener('click', () => {
+    computerChoice.style.borderColor = '#FF0000';
+})

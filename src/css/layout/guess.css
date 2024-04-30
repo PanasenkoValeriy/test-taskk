@@ -13,4 +13,5 @@
 .guess__text {
     margin-left: 202px;
     white-space: nowrap;
+    color: var(--secondary__color);
 }
