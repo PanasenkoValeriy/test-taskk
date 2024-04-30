@@ -8,5 +8,5 @@ import "./js/dino";
 import "./js/football";
 import "./js/three-numbers";
 import "./js/team";
-import "./js/scientisc";
+import "./js/scientists";
 import "./js/footer";
