@@ -5,6 +5,7 @@ const hours = document.getElementById('hours');
 const minutes = document.getElementById('minutes');
 const seconds = document.getElementById('seconds');
 const result = document.querySelector('.time-text');
+
 days.style.marginRight = '5px';
 
 
@@ -40,7 +41,5 @@ button.onclick = function converter() {
     }
     
     input.value = '';
-
-    // result.textContent = `${daysConverter} дн. ${hoursConverter}:${minutesConverter}:${secondsConverter}`
 
 }
