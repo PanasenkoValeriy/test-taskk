@@ -1,37 +1,45 @@
-const choices = ['rock', 'scissors', 'paper'];
-const buttons = document.querySelectorAll('.rps__list__btn');
-const winner = document.querySelector('.winner');
+const userButtons = document.querySelector('.rps__list');
+const winnerText = document.querySelector('.winner');
 const computerScore = document.getElementById('comp__score');
 const playerScore = document.getElementById('player__score');
 const resultBtn = document.querySelector('.rps__btn');
 
-buttons.forEach(button => {
-    button.addEventListener('click', () => {
-        const userChoice = button.dataset.choice;
-        const computerChoice = choices[Math.floor(Math.random() * choices.length)];
-        const result = generateWinner(userChoice, computerChoice);
-    });
-});
+let compWin = 0;
+let userWin = 0;
 
-function generateWinner(userChoice, computerChoice) {
-    if (userChoice === computerChoice) {
-        winner.textContent = 'Нічия';
-        winner.style.volor = '#000';
-    } else if (
-        (userChoice === 'камінь' && computerChoice === 'ножиці') ||
-        (userChoice === 'ножиці' && computerChoice === 'папір') ||
-        (userChoice === 'папір' && computerChoice === 'камінь')
-    ) {
-        winner.textContent = 'Ви виграли раунд!';
-        winner.style.color = '#039900';
-        playerScore.textContent += 1;
+function compChoiceMarkup(choice) {
+    if (choice === 'rock') {
+        resultBtn.innerHTML = '<img src="/img/rock.svg"/>';
+    } else if (choice === 'scissors') {
+        resultBtn.innerHTML = '<img src="/img/scissors.svg"/>';
+    } else if (choice === 'paper') {
+        resultBtn.innerHTML = '<img src="/img/paper.svg"/>';
     } else {
-        winner.textContent = 'Комп’ютер виграв раунд!';
-        winner.style.color = '#FF0000';
-        computerScore.textContent += 1;
+        resultBtn.innerHTML = '';
     }
 }
 
-resultBtn.addEventListener('click', () => {
-    computerChoice.style.borderColor = '#FF0000';
-})
+userButtons.addEventListener('click', (e) => {
+    const choices = ['rock', 'scissors', 'paper'];
+    const computerChoice = choices[Math.floor(Math.random() * choices.length)];
+
+    console.log(e.target.alt);
+    compChoiceMarkup(computerChoice);
+
+     if (e.target.alt === computerChoice) {
+        winnerText.textContent = 'Нічия';
+        winnerText.style.volor = '#000';
+    } else if (
+        (e.target.alt === 'rock' && computerChoice === 'scissors') ||
+        (e.target.alt === 'scissors' && computerChoice === 'paper') ||
+        (e.target.alt === 'paper' && computerChoice === 'rock')
+    ) {
+        winnerText.textContent = 'Ви виграли раунд!';
+        winnerText.style.color = '#039900';
+        playerScore.textContent = userWin += 1;
+    } else {
+        winnerText.textContent = 'Комп’ютер виграв раунд!';
+        winnerText.style.color = '#FF0000';
+        computerScore.textContent = compWin += 1;
+    }
+});
