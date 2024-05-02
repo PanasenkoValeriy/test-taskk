@@ -1,20 +1,22 @@
-.football__title {
-    color: var(--secondary__color);
-    margin-bottom: 36px;
-}
-
-.box {
-    width: 720px;
-    height: 220px;
-    border-radius: 37px;
+.football__field {
+    width: 640px;
+    height: 406px;
+    border-radius: 20px;
     border: 2px solid var(--secondary__color);   
-    background: #5ABB58;
+    background-color: #5ABB58;
+    background-image: url(/img/field.png);
     margin: 0 auto;
-    position: relative;
 }
 
-.football__img {
-    position: absolute;
-    top: 50%;
-    left: 50%;
+.ball {
+    position: relative;
+    top: 185px;
+    left: 300px;
+    width: 40px;
+    height: 40px;
+}
+
+.spin {
+    transform: rotate(360deg);
+    transition: 1s;
 }
