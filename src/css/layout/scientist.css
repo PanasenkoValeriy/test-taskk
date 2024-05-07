@@ -26,15 +26,26 @@
 }
 
 .scientist-card {
+    display: flex;
+    justify-content: center;
+    align-items: end;
+
     width: 100px;
     height: 100px;
     flex-shrink: 0;
 
     border-radius: 20px;
-    background: #D9D9D9;
 }
 
 .scientist-card-text {
+    color: #FFF;
+    text-align: center;
+    font-family: "Montserrat Alternates";
+    font-size: 8px;
+    font-weight: 400;
+    line-height: 170%;
+
+    text-shadow: 3px 1px 2px black, 0 0 1px black, 0 0 0.2px black;
 }
 
 .scientist-option-list {
