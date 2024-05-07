@@ -27,7 +27,7 @@ function converter() {
         const minutesConverter = Math.floor(input.value - (daysConverter * 24 * 60 + hoursConverter * 60));
         const secondsConverter = Math.floor((input.value - (daysConverter * 24 * 60 + hoursConverter * 60 + minutesConverter)) * 60);
 
-        // days.textContent = `${daysConverter} дн.`;
+        days.textContent = `${daysConverter} дн.`;
         
         // if (hoursConverter >= 10) {
         //     hours.textContent = `${hoursConverter}:`;

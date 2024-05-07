@@ -86,3 +86,5 @@ const scientists = [
     id: 12,
   },
 ];
+
+export { scientists }
