@@ -1,46 +1,45 @@
-// const btns = document.querySelectorAll('.rps__list__btn');
-// const computerScore = document.querySelector('.comp__score');
-// const playerScore = document.querySelector('.player__score');
-// const winner = document.getElementById('winner');
-// const resultBtn = document.querySelector('.rps__btn');
+const userButtons = document.querySelector('.rps__list');
+const winnerText = document.querySelector('.winner');
+const computerScore = document.getElementById('comp__score');
+const playerScore = document.getElementById('player__score');
+const resultBtn = document.querySelector('.rps__btn');
 
-// let playerChoice = '';
-// let computerChoice = '';
+let compWin = 0;
+let userWin = 0;
 
-// const losingString = 'Комп’ютер виграв раунд!';
-// // losingString.style.color = 'red';
+function compChoiceMarkup(choice) {
+    if (choice === 'rock') {
+        resultBtn.innerHTML = '<img src="/img/rock.svg"/>';
+    } else if (choice === 'scissors') {
+        resultBtn.innerHTML = '<img src="/img/scissors.svg"/>';
+    } else if (choice === 'paper') {
+        resultBtn.innerHTML = '<img src="/img/paper.svg"/>';
+    } else {
+        resultBtn.innerHTML = '';
+    }
+}
 
-// const winningString = 'Ви виграли раунд!';
-// // winningString.style.color = 'green';
+userButtons.addEventListener('click', (e) => {
+    const choices = ['rock', 'scissors', 'paper'];
+    const computerChoice = choices[Math.floor(Math.random() * choices.length)];
 
-// btns.forEach((btn) => {
-//     btn.addEventListener('click', () => {
-//         playerChoice = btn.dataset.choice;
-//         computerChoice = generateComputerChoice();
-//         const winner = generateWinner(playerChoice, computerChoice);
-//     });
-// });
+    console.log(e.target.alt);
+    compChoiceMarkup(computerChoice);
 
-// function generateComputerChoice() {
-//     const choices = ['rock', 'paper', 'scissors'];
-//     const randomChoice = Math.floor(Math.random() * choices.length);
-//     return choices[randomChoice];
-// };
-
-// function generateWinner(playerChoice, computerChoice) {
-//     if (playerChoice === computerChoice) {
-//         return 'Нічия!';
-//     } else if ((computerChoice === 'rock' && playerChoice === 'scissors') ||
-//         (computerChoice === 'scissors' && playerChoice === 'paper') ||
-//         (computerChoice === 'paper' && playerChoice === 'rock')) {
-//         return losingString;
-//         computerScore.textContent += 1;
-//     } else {
-//         return winningString;
-//         playerScore.textContent += 1;
-//     }
-// };
-
-// resultBtn.addEventListener('click', () => {
-//     computerChoice.style.borderColor = 'green';
-// });
+     if (e.target.alt === computerChoice) {
+        winnerText.textContent = 'Нічия';
+        winnerText.style.volor = '#000';
+    } else if (
+        (e.target.alt === 'rock' && computerChoice === 'scissors') ||
+        (e.target.alt === 'scissors' && computerChoice === 'paper') ||
+        (e.target.alt === 'paper' && computerChoice === 'rock')
+    ) {
+        winnerText.textContent = 'Ви виграли раунд!';
+        winnerText.style.color = '#039900';
+        playerScore.textContent = userWin += 1;
+    } else {
+        winnerText.textContent = 'Комп’ютер виграв раунд!';
+        winnerText.style.color = '#FF0000';
+        computerScore.textContent = compWin += 1;
+    }
+});

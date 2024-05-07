@@ -38,10 +38,12 @@
 .score__player {}
 
 .rps__btn {
-    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin: 0 auto;
-    width: 182px;
-    height: 35px;
+    width: 60px;
+    height: 60px;
     border-radius: 20px;
     background-color: var(--secondary__color);
     color: var(--main__color);
@@ -49,8 +51,9 @@
     font-size: 12px;
 }
 
-.rps__btn:hover {
-    background-color: white;
-    color: black;
-    border: 1px solid black;
+.winner {
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    color: var(--secondary__color);
 }
