@@ -68,7 +68,9 @@
     font-weight: 400;
     line-height: normal;
     position: relative;
-    top: 2px
+    top: 2px;
+    height: 35px;
+    width: 107px;
 }
 
 .footer-smalltext {
