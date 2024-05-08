@@ -17,8 +17,8 @@
 
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
   
-  <script type="module" crossorigin src="/game-center/assets/index-c655c69f.js"></script>
-  <link rel="stylesheet" href="/game-center/assets/index-0c259d59.css">
+  <script type="module" crossorigin src="/game-center/assets/index-3daf9bee.js"></script>
+  <link rel="stylesheet" href="/game-center/assets/index-ddef4cbb.css">
 </head>
 
 <body>
@@ -42,13 +42,13 @@
           /></a>
           <ul class="submenu__list">
             <li class="submenu__item">
-              <a href="" class="submenu__link">Числовий</a>
+              <a href="" class="submenu__link" id="numbers">Числовий</a>
             </li>
             <li class="submenu__item">
-              <a href="" class="submenu__link">Ігровий</a>
+              <a href="" class="submenu__link" id="games">Ігровий</a>
             </li>
             <li class="submenu__item">
-              <a href="" class="submenu__link">Ознайомчий </a>
+              <a href="" class="submenu__link" id="introducing">Ознайомчий </a>
             </li>
           </ul>
         </li>
@@ -70,12 +70,16 @@
     <div class="container">
       <h1 id="mainTitle">Популярні інтерактивні ігри</h1>
       <hr id="line" noshade="" color="#000" />
-      <section class="check-year-section">
+      <section class="check-year-section" id="numbers">
   <h2 class="check-title">Перевір в який рік ти народився</h2>
   <div class="check-container">
     <div class="input-box check-input-box">
       <form id="check-form" autocomplete="off">
-        <input type="text" placeholder="Введіть рік народження" class="check-input"/>
+        <input
+          type="text"
+          placeholder="Введіть рік народження"
+          class="check-input"
+        />
         <button type="submit" class="search-button">
           <img class="lupa" src="/game-center/assets/lupa-38aa7c2b.svg" alt="" />
         </button>
@@ -84,8 +88,9 @@
     <p class="check-text"></p>
   </div>
 </section>
+
       <hr id="line" noshade="" color="#000" />
-      <section class="guess__section">
+      <section class="guess__section" id="games">
   <h2 class="guess__title">Вгадай число, яке загадав комп’ютер</h2>
   <div class="input-box guess__input__box">
     <form id="guess__form" autocomplete="off">
@@ -105,7 +110,7 @@
 </section>
 
       <hr id="line" noshade="" color="#000" />
-      <section class="game">
+      <section class="game" id="games">
   <h2 class="rps__title">Камінь - ножиці - папір</h2>
   <div class="choices__score__container">
     <ul class="rps__list">
@@ -147,56 +152,68 @@
 </section>
 
       <hr id="line" noshade="" color="#000" />
-      <section class="calculator-section">
-    <h2 class="calculator-title">Калькулятор</h2>
-    <form class='calculator-form' action="">
-        <input class="first-calculator-input" placeholder="Введіть число">
-        <ul class="calculator-buttons-list">
-            <li class="calculator-buttons-list-item"><button type="button" class="calculator-button plus">+</button></li>
-            <li class="calculator-buttons-list-item"><button type="button" class="calculator-button multiply">*</button></li>
-            <li class="calculator-buttons-list-item"><button type="button" class="calculator-button minus">-</button></li>
-            <li class="calculator-buttons-list-item"><button type="button" class="calculator-button divide">/</button></li>
-          </ul>
-          
+      <section class="calculator-section" id="numbers">
+  <h2 class="calculator-title">Калькулятор</h2>
+  <form class="calculator-form" action="">
+    <input class="first-calculator-input" placeholder="Введіть число" />
+    <ul class="calculator-buttons-list">
+      <li class="calculator-buttons-list-item">
+        <button type="button" class="calculator-button plus">+</button>
+      </li>
+      <li class="calculator-buttons-list-item">
+        <button type="button" class="calculator-button multiply">*</button>
+      </li>
+      <li class="calculator-buttons-list-item">
+        <button type="button" class="calculator-button minus">-</button>
+      </li>
+      <li class="calculator-buttons-list-item">
+        <button type="button" class="calculator-button divide">/</button>
+      </li>
+    </ul>
 
-        <input class="second-calculator-input" placeholder="Введіть число">
-        <button class="calculator-equals" type="button">=</button>
+    <input class="second-calculator-input" placeholder="Введіть число" />
+    <button class="calculator-equals" type="button">=</button>
 
-
-        <p class="calculator-output">Результат<p>
-
-
-    </form>
-
-
+    <p class="calculator-output">Результат</p>
+    <p></p>
+  </form>
 </section>
+
       <hr id="line" noshade="" color="#000" />
-      <section class="time-calc-section">
-    <h2 class="time-title">Калькулятор часу</h2>
-    <div class="time-container">
-        <div class="input-box time-input-box">
-            <form id="time-form" autocomplete="off">
-                <input type="text" placeholder="Введіть число" class="time-input">
-                <button type="submit" class="search-button time-btn-js">
-                    <img class="lupa" src="/game-center/assets/lupa-38aa7c2b.svg" alt="">
-                </button>
-            </form>
-        </div>
-        <svg class="time-dots" xmlns="http://www.w3.org/2000/svg" width="100" height="2" viewBox="0 0 100 2" fill="none">
-            <path d="M0 1H100" stroke="black" stroke-dasharray="2 2"/>
-        </svg>
-        <p class="time-text">
-            <span id="days"></span>
-            <span id="hours"></span>
-            <span id="minutes"></span>
-            <span id="seconds"></span>
-        </p>
+      <section class="time-calc-section" id="numbers">
+  <h2 class="time-title">Калькулятор часу</h2>
+  <div class="time-container">
+    <div class="input-box time-input-box">
+      <form id="time-form" autocomplete="off">
+        <input type="text" placeholder="Введіть число" class="time-input" />
+        <button type="submit" class="search-button time-btn-js">
+          <img class="lupa" src="/game-center/assets/lupa-38aa7c2b.svg" alt="" />
+        </button>
+      </form>
     </div>
+    <svg
+      class="time-dots"
+      xmlns="http://www.w3.org/2000/svg"
+      width="100"
+      height="2"
+      viewBox="0 0 100 2"
+      fill="none"
+    >
+      <path d="M0 1H100" stroke="black" stroke-dasharray="2 2" />
+    </svg>
+    <p class="time-text">
+      <span id="days"></span>
+      <span id="hours"></span>
+      <span id="minutes"></span>
+      <span id="seconds"></span>
+    </p>
+  </div>
 </section>
+
       <hr id="line" noshade="" color="#000" />
       
       <hr id="line" noshade="" color="#000" />
-      <section class="football-section">
+      <section class="football-section" id="games">
   <h2>Футбол</h2>
   <div class="football__field">
     <img src="/game-center/assets/ball-ea243798.svg" alt="ball" class="ball" />
@@ -204,15 +221,31 @@
 </section>
 
       <hr id="line" noshade="" color="#000" />
-      <section class="digits-section">
-    <h2 class="digits-title">Введіть 3 числа</h2>
-    <form class="digits-form">
-        <input type="text" class="digits-input first-digits-input" placeholder="Введіть число">
-        <input type="text" class="digits-input second-digits-input" placeholder="Введіть число">
-        <input type="text" class="digits-input third-digits-input" placeholder="Введіть число">
-    </form>
-    <p class="digits-output">Найбільше число, яке ви ввели - <span class="digit-output-number">(число)</span></p>
+      <section class="digits-section" id="numbers">
+  <h2 class="digits-title">Введіть 3 числа</h2>
+  <form class="digits-form">
+    <input
+      type="text"
+      class="digits-input first-digits-input"
+      placeholder="Введіть число"
+    />
+    <input
+      type="text"
+      class="digits-input second-digits-input"
+      placeholder="Введіть число"
+    />
+    <input
+      type="text"
+      class="digits-input third-digits-input"
+      placeholder="Введіть число"
+    />
+  </form>
+  <p class="digits-output">
+    Найбільше число, яке ви ввели -
+    <span class="digit-output-number">(число)</span>
+  </p>
 </section>
+
       <hr id="line" noshade="" color="#000" />
       
 
@@ -260,12 +293,12 @@
     </div>
   </section>
       <hr id="line" noshade="" color="#000" />
-      <section class="scientist-section">
-    <h2 class="scientist-title">Обери вченого/их</h2>
+      <section class="scientist-section" id="introducing">
+  <h2 class="scientist-title">Обери вченого/их</h2>
 
-    <div class="scientist-container">
-        <ul class="scientist-card-list">
-            <!-- <li class="scientist-card">
+  <div class="scientist-container">
+    <ul class="scientist-card-list">
+      <!-- <li class="scientist-card">
                 <p class="scientist-card-text"></p>
             </li>
             <li class="scientist-card">
@@ -301,9 +334,10 @@
             <li class="scientist-card">
                 <p class="scientist-card-text"></p>
             </li> -->
-        </ul>
+    </ul>
 
-        <ul class="scientist-option-list">
+
+<ul class="scientist-option-list">
             <li class="scientist-option-item">
                 <button onclick="century()" type="button" class="scientist-option-button" id="century">Які вчені народилися в 19 ст.</button>
             </li>
