@@ -1,0 +1,100 @@
+
+.team-member {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.team-swiper-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 20px;
+    background: #D9D9D9;
+    margin-bottom: 20px;
+}
+
+.team-swiper-name {
+    color: #000;
+
+    font-family: "Montserrat Alternates";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 20px;
+}
+
+.team-swiper-descr {
+    color: #000;
+
+    font-family: "Montserrat Alternates";
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 24px;
+}
+
+
+
+.swiper-pagination-bullet {
+    width: 18px;
+    height: 3px;
+    background-color: #D9D9D9;
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.swiper-pagination-bullet-active {
+    width: 30px;
+    height: 3px;
+    background-color: #797979;
+}
+
+
+.swiper {
+    padding-bottom: 40px;
+  }
+  
+  .swiper-pagination-bullet {
+    width: 18px;
+    height: 3px;
+    background-color: #d9d9d9;
+    border-radius: 5px;
+    animation-name: bullet;
+    animation-duration: 1s;
+  }
+  
+  .swiper-pagination-bullet-active {
+    width: 30px;
+    background-color: #797979;
+    animation-name: bullet;
+    animation-duration: 1s;
+
+  }
+  
+  .swiper-button-next,
+  .swiper-button-prev {
+    stroke-width: 1px;
+    stroke: #000000;
+    width: 50px;
+    height: 100px;
+    border: none;
+  
+    position: absolute;
+    top: 20%;
+  }
+  
+  .swiper-button-next::after,
+  .swiper-button-prev::after {
+    display: none;
+  }
+
+  @keyframes bullet {
+    from {
+        width: 18px;
+    } to {
+        width: 30px;
+    }
+
+  }
