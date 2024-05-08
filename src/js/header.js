@@ -12,3 +12,9 @@ function onIconClick() {
         icon.src = '/img/day-mode.svg'
     }
 }
+
+// filter
+
+const interactive = document.querySelector('.interactive');
+const list = document.querySelector('.submenu__list');
+const sections = document.querySelectorAll('section');
