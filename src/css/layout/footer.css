@@ -81,3 +81,15 @@
     font-weight: 400;
     line-height: normal;
 }
+
+.footer-input-btn {
+    position: relative;
+    top: 0;
+    transition: 0.25s;
+    transform: translateY(-0.25em);
+}
+
+.footer-input-btn:hover,
+.footer-input-btn:focus {
+    top: -3px;
+}
