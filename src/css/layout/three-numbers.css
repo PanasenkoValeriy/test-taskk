@@ -20,6 +20,16 @@
     margin-bottom: 36px;
 }
 
+.digits-input {
+    width: 135px;
+    height: 35px;
+    padding: 10px 20px;
+}
+
+.digits-input, .digits-form ::-webkit-input-placeholder {
+    text-align: center;
+  }
+
 
 .digits-output {
     color: #000;

@@ -21,7 +21,15 @@
 
 .first-calculator-input,
 .second-calculator-input {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 20px;
     margin: 38px;
+    height: 35px;
+    width: 135px;
+
+
 }
 
 .calculator-buttons-list {
@@ -96,13 +104,15 @@
 
 .calculator-output {
     display: flex;
-    padding: 10px 55px 10px 10px;
+    padding: 10px 20px;
     align-items: center;
     justify-content: center;
     border-radius: 20px;
     background: #D7D7D7;
     border: none;
     filter: drop-shadow(3px 3px 0px rgba(0, 0, 0, 0.25));
+    color: #7E7E7E;
+
 
     font-family: "Montserrat Alternates";
     font-size: 12px;
@@ -110,4 +120,15 @@
     margin: 38px;
     position: relative;
     top: 1px;
+    height: 35px;
+    width: 135px;
 }
+
+.first-calculator-input,
+.second-calculator-input ::-webkit-input-placeholder {
+    text-align: center;
+  }
+
+  .second-calculator-input, .first-calculator-input ::-webkit-input-placeholder {
+    text-align: center;
+  }

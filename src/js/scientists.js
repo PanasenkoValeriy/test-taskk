@@ -1,14 +1,14 @@
 import { scientists } from './utils/scientists-data';
 
-// const century = document.querySelector('.scientist-option-button');
-// const einshtein = document.querySelector('.scientist-option-button');
-// const alphabet = document.querySelector('.scientist-option-button');
-// const surname = document.querySelector('.scientist-option-button');
-// const age = document.querySelector('.scientist-option-button');
-// const name = document.querySelector('.scientist-option-button');
-// const latest = document.querySelector('.scientist-option-button');
-// const longestAndSmallest = document.querySelector('.scientist-option-button');
-// const lettersMatch = document.querySelector('.scientist-option-button');
+const century = document.getElementById('century');
+const einshtein = document.getElementById('einshtein');
+const alphabet = document.getElementById('alphabet');
+const surname = document.getElementById('surname');
+const age = document.getElementById('age');
+const name = document.getElementById('name');
+const latest = document.getElementById('latest');
+const longestAndSmallest = document.getElementById('longestAndSmallest');
+const lettersMatch = document.getElementById('lettersMatch');
 
 const scientistList = document.querySelector('.scientist-card-list');
 const buttonList = document.querySelector('.scientists-button-list');
@@ -26,63 +26,64 @@ scientists.forEach((scientist, index) => {
   scientistList.appendChild(card);
 });
 
-function century() {
+century.onclick = function() {
   const bornFiltered = scientists.filter(scientist => scientist.born >= 1800 && scientist.born < 1900);
   
   console.log(bornFiltered);
 }
 
-// century.onclick = function century() {
-//   const bornFiltered = scientists.filter(scientist => scientist.born >= 1800 && scientist.born < 1900);
+einshtein.onclick = function() {
+  const einshteinFind = scientists.find(scientist => scientist.name === 'Albert');
+
+  console.log(einshteinFind);
+}
+
+alphabet.onclick = function() {
+  const scientistToSortByAlphabet = scientists.map(scientist => scientist.name);
+  const alphabetSorted = scientistToSortByAlphabet.sort();
+
+  console.log(alphabetSorted);
+}
+
+surname.onclick = function() {
+  const surnameFind = scientists.filter(scientist => scientist.surname.startsWith('C'));
+
+  console.log(surnameFind);
+}
+
+age.onclick = function() {
+  const scientistToSortByAge = scientists.map(scientist => scientist.dead - scientist.born);
+  const ageSorted = scientistToSortByAge.sort();
   
-//   console.log(bornFiltered);
-// }
+  console.log(ageSorted);
+}
 
-// einshtein.onclick = function einshtein() {
-//   const einshteinFind = scientists.find(scientist => scientist.name === 'Albert');
+name.onclick = function() {
+  const nameDelete = scientists.filter(scientist => !scientist.name.startsWith('A'));
   
+  console.log(nameDelete);
+}
 
-//   console.log(einshteinFind);
-// }
+latest.onclick = function() {
+  const latestBorn = scientists.reduce((latest, earliest) => {
+    if (earliest.born > latest.born) {
+        return earliest;
+    } else {
+        return latest;
+    }});
 
-// alphabet.onclick = function alphabet() {
-//   const alphabetSorted =
+  console.log(latestBorn);
+}
 
-//   console.log(alphabetSorted);
-// }
+longestAndSmallest.onclick = function() {
+  const longest = scientists.map(scientist => scientist.dead - scientist.born);
+  const shortest = scientists.map(scientist => scientist.dead - scientist.born);
 
-// surname.onclick = function surname() {
-//   const surnameFound =
+  console.log(ageSorted);
+}
 
-//   console.log(surnameFound);
-// }
+lettersMatch.onclick = function() {
+  const lettersMatchFound =
 
-// age.onclick = function age() {
-//   const ageSorted =
-
-//   console.log(ageSorted);
-// }
-
-// name.onclick = function name() {
-//   const nameDeleted =
-
-//   console.log(nameDeleted);
-// }
-
-// latest.onclick = function latest() {
-//   const latestFound =
-
-//   console.log(latestFound);
-// }
-
-// longestAndSmallest.onclick = function longestAndSmallest() {
-//   const longestAndSmallestFound =
-
-//   console.log(longestAndSmallestFound);
-// }
-
-// lettersMatch.onclick = function lettersMatch() {
-//   const lettersMatchFound =
-
-//   console.log(lettersMatchFound);
-// }
+  console.log(lettersMatchFound);
+}

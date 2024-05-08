@@ -1,16 +1,16 @@
 .footer {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
+
     height: 220px;
 }
 
 .footer-logo-svg {
-    margin: 75px 175px;
+    margin: 75px;
 }
 
 .footer-logo {
     width: 165px;
-    margin: 75px 175px;
     height: 70px;
 }
 
@@ -29,7 +29,7 @@
 }
 
 .footer-subscribe {
-    margin: 97px 174px 63px 187px;
+    margin: 75px;
     /* display: flex;
     justify-content: center;
     align-items: center; */
@@ -68,7 +68,9 @@
     font-weight: 400;
     line-height: normal;
     position: relative;
-    top: 2px
+    top: 2px;
+    height: 35px;
+    width: 107px;
 }
 
 .footer-smalltext {
