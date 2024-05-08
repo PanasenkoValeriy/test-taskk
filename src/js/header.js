@@ -24,11 +24,12 @@ document.querySelector('.submenu__list').addEventListener('click', e => {
     } 
 
     let filterClass = e.target.dataset['h'];
-    
+
     filterBox.forEach(elem => {
         elem.classList.remove('hide');
         if (!elem.classList.contains(filterClass) && filterClass !== 'all') {
             elem.classList.add('hide');
         }
     });
+
 });

@@ -10,7 +10,17 @@
     margin-right: 104px;
 }
 
-.rps__item {}
+.rps__item {
+    position: relative;
+    top: 0;
+    transition: 0.25s;
+    transform: translateY(-0.25em);
+}
+
+.rps__item:hover,
+.rps__item:focus {
+    top: -3px;
+}
 
 .rps__list__btn {
     background-color: black;

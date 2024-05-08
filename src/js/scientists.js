@@ -10,23 +10,22 @@ const latest = document.getElementById('latest');
 const longestAndSmallest = document.getElementById('longestAndSmallest');
 const lettersMatch = document.getElementById('lettersMatch');
 
-const filterBox = document.querySelectorAll('.scientist-option-item');
+// const filterBox = document.querySelectorAll('.scientist-card');
 
-document.querySelector('.scientist-option-list').addEventListener('click', e => {
-    if (e.target.className !== 'scientist-option-button'){
-      return false;
-    } 
+// document.querySelector('.scientist-option-list').addEventListener('click', e => {
+//     if (e.target.className !== 'scientist-option-button'){
+//       return false;
+//     } 
 
-    let filterClass = e.target.dataset['f'];
+//     let filterClass = e.target.dataset['f'];
     
-    filterBox.forEach(elem => {
-        elem.classList.remove('hide');
-        if (!elem.classList.contains(filterClass) && filterClass !== 'all') {
-            elem.classList.add('hide');
-        }
-    });
-
-});
+//     filterBox.forEach(elem => {
+//         elem.classList.remove('hide');
+//         if (!elem.classList.contains(filterClass) && filterClass !== 'all') {
+//             elem.classList.add('hide');
+//         }
+//     });
+// });
 
 const scientistList = document.querySelector('.scientist-card-list');
 
@@ -43,9 +42,7 @@ scientists.forEach((scientist, index) => {
 });
 
 century.onclick = function() {
-  const bornFiltered = scientists.filter(scientist => scientist.born >= 1800 && scientist.born < 1900);
-  
-  console.log(bornFiltered);
+  // const bornFiltered = scientists.filter(scientist => !(scientist.born >= 1800 && scientist.born < 1900));
 }
 
 einshtein.onclick = function() {
@@ -55,7 +52,7 @@ einshtein.onclick = function() {
 }
 
 alphabet.onclick = function() {
-  return console.log([...scientists].map(scientist => scientist.name).sort())
+  return console.log(scientists.map(scientist => scientist.name).sort())
 }
 
 surname.onclick = function() {
@@ -65,10 +62,9 @@ surname.onclick = function() {
 }
 
 age.onclick = function() {
-  const scientistToSortByAge = scientists.map(scientist => scientist.dead - scientist.born);
-  const ageSorted = [...scientistToSortByAge].sort();
+  const scientistToSortByAge = scientists.map(scientist => scientist.dead - scientist.born).sort();
   
-  console.log(ageSorted);
+  console.log(scientistToSortByAge);
 }
 
 name.onclick = function() {
