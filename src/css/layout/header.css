@@ -84,7 +84,14 @@
     background-color: #F1F1F1;
 }
 
-.submenu__link {}
+.submenu__btn {
+    border: none;
+    background-color: transparent;
+}
+
+.submenu__btn:hover {
+    outline: none;
+}
 
 .switch__theme {
     margin-top: 17px;
