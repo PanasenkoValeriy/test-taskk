@@ -17,8 +17,8 @@
 
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
   
-  <script type="module" crossorigin src="/game-center/assets/index-4f61f9b9.js"></script>
-  <link rel="stylesheet" href="/game-center/assets/index-2104069f.css">
+  <script type="module" crossorigin src="/game-center/assets/index-5c59fc29.js"></script>
+  <link rel="stylesheet" href="/game-center/assets/index-56735fd4.css">
 </head>
 
 <body>
@@ -42,13 +42,13 @@
           /></a>
           <ul class="submenu__list">
             <li class="submenu__item">
-              <a href="" class="submenu__link" id="numbers">Числовий</a>
+              <button type="button" class="submenu__btn" data-h="numerical">Числовий</button>
             </li>
             <li class="submenu__item">
-              <a href="" class="submenu__link" id="games">Ігровий</a>
+              <button type="button" class="submenu__btn" data-h="game">Ігровий</button>
             </li>
             <li class="submenu__item">
-              <a href="" class="submenu__link" id="introducing">Ознайомчий </a>
+              <button type="button" class="submenu__btn" data-h="acquaintance">Ознайомчий</button>
             </li>
           </ul>
         </li>
@@ -69,8 +69,8 @@
   <main>
     <div class="container">
       <h1 id="mainTitle">Популярні інтерактивні ігри</h1>
-      <hr id="line" noshade="" color="#000" />
-      <section class="check-year-section" id="numbers">
+      <hr class="numerical" id="line" noshade="" color="#000" />
+      <section class="check-year-section numerical" id="numbers">
   <h2 class="check-title">Перевір в який рік ти народився</h2>
   <div class="check-container">
     <div class="input-box check-input-box">
@@ -89,8 +89,8 @@
   </div>
 </section>
 
-      <hr id="line" noshade="" color="#000" />
-      <section class="guess__section" id="games">
+      <hr class="numerical" id="line" noshade="" color="#000" />
+      <section class="guess__section numerical" id="games">
   <h2 class="guess__title">Вгадай число, яке загадав комп’ютер</h2>
   <div class="input-box guess__input__box">
     <form id="guess__form" autocomplete="off">
@@ -109,8 +109,8 @@
   </div>
 </section>
 
-      <hr id="line" noshade="" color="#000" />
-      <section class="game" id="games">
+      <hr class="game" id="line" noshade="" color="#000" />
+      <section class="rps-section game" id="games">
   <h2 class="rps__title">Камінь - ножиці - папір</h2>
   <div class="choices__score__container">
     <ul class="rps__list">
@@ -151,8 +151,8 @@
   <div class="rps__btn"></div>
 </section>
 
-      <hr id="line" noshade="" color="#000" />
-      <section class="calculator-section" id="numbers">
+      <hr class="numerical" id="line" noshade="" color="#000" />
+      <section class="calculator-section numerical" id="numbers">
   <h2 class="calculator-title">Калькулятор</h2>
   <form class="calculator-form" action="">
     <input class="first-calculator-input" placeholder="Введіть число" />
@@ -179,8 +179,8 @@
   </form>
 </section>
 
-      <hr id="line" noshade="" color="#000" />
-      <section class="time-calc-section" id="numbers">
+      <hr class="numerical" id="line" noshade="" color="#000" />
+      <section class="time-calc-section numerical" id="numbers">
   <h2 class="time-title">Калькулятор часу</h2>
   <div class="time-container">
     <div class="input-box time-input-box">
@@ -210,18 +210,20 @@
   </div>
 </section>
 
-      <hr id="line" noshade="" color="#000" />
-      
-      <hr id="line" noshade="" color="#000" />
-      <section class="football-section" id="games">
+      <hr class="game" id="line" noshade="" color="#000" />
+      <section class="dino-section game">
+
+</section>
+      <hr class="game" id="line" noshade="" color="#000" />
+      <section class="football-section game" id="games">
   <h2>Футбол</h2>
   <div class="football__field">
     <img src="/game-center/assets/ball-ea243798.svg" alt="ball" class="ball" />
   </div>
 </section>
 
-      <hr id="line" noshade="" color="#000" />
-      <section class="digits-section" id="numbers">
+      <hr class="numerical" id="line" noshade="" color="#000" />
+      <section class="digits-section numerical" id="numbers">
   <h2 class="digits-title">Введіть 3 числа</h2>
   <form class="digits-form">
     <input
@@ -246,10 +248,8 @@
   </p>
 </section>
 
-      <hr id="line" noshade="" color="#000" />
-      
-
-<section>
+      <hr class="acquaintance" id="line" noshade="" color="#000" />
+      <section class="team-section acquaintance">
     <h2 class="title">Наша команда</h2>
   
     <div class="swiper">
@@ -292,8 +292,8 @@
       </div>
     </div>
   </section>
-      <hr id="line" noshade="" color="#000" />
-      <section class="scientist-section" id="introducing">
+      <hr class="acquaintance" id="line" noshade="" color="#000" />
+      <section class="scientist-section acquaintance" id="introducing">
   <h2 class="scientist-title">Обери вченого/их</h2>
 
   <div class="scientist-container">
@@ -371,7 +371,7 @@
 </section>
     </div>
   </main>
-  <section class="footer">
+  <div class="footer">
     <svg class="footer-logo-svg">
         <use class="footer-icon" href="/game-center/assets/symbol-defs-7a1000e3.svg#icon-Group-128-1"></use>
     </svg>
@@ -387,7 +387,7 @@
             <button type="button" class="footer-input-btn">Підписатись</button>
             <p class="footer-smalltext">*Підписавшись, Ви зможете ортимувати інформацію про новинки на сайті</p>
         </form>
-</section>
+    </div>
   
 
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
