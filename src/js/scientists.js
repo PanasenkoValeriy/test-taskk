@@ -10,8 +10,25 @@ const latest = document.getElementById('latest');
 const longestAndSmallest = document.getElementById('longestAndSmallest');
 const lettersMatch = document.getElementById('lettersMatch');
 
+const filterBox = document.querySelectorAll('.scientist-option-item');
+
+document.querySelector('.scientist-option-list').addEventListener('click', e => {
+    if (e.target.className !== 'scientist-option-button'){
+      return false;
+    } 
+
+    let filterClass = e.target.dataset['f'];
+    
+    filterBox.forEach(elem => {
+        elem.classList.remove('hide');
+        if (!elem.classList.contains(filterClass) && filterClass !== 'all') {
+            elem.classList.add('hide');
+        }
+    });
+
+});
+
 const scientistList = document.querySelector('.scientist-card-list');
-const buttonList = document.querySelector('.scientists-button-list');
 
 scientists.forEach((scientist, index) => {
   const card = document.createElement('li');
@@ -19,7 +36,6 @@ scientists.forEach((scientist, index) => {
   
   card.style.backgroundImage = `url('../img/scientists-img/${index + 1}.jpg')`;
   card.style.backgroundSize = 'cover';
-  // card.style.backgroundPosition = 'center';
 
   card.innerHTML = `<p class="scientist-card-text">${scientist.name} ${scientist.surname}<br>(${scientist.born}-${scientist.dead})</p>`;
   
@@ -39,10 +55,7 @@ einshtein.onclick = function() {
 }
 
 alphabet.onclick = function() {
-  const scientistToSortByAlphabet = scientists.map(scientist => scientist.name);
-  const alphabetSorted = scientistToSortByAlphabet.sort();
-
-  console.log(alphabetSorted);
+  return console.log([...scientists].map(scientist => scientist.name).sort())
 }
 
 surname.onclick = function() {
@@ -53,7 +66,7 @@ surname.onclick = function() {
 
 age.onclick = function() {
   const scientistToSortByAge = scientists.map(scientist => scientist.dead - scientist.born);
-  const ageSorted = scientistToSortByAge.sort();
+  const ageSorted = [...scientistToSortByAge].sort();
   
   console.log(ageSorted);
 }
@@ -65,25 +78,32 @@ name.onclick = function() {
 }
 
 latest.onclick = function() {
-  const latestBorn = scientists.reduce((latest, earliest) => {
-    if (earliest.born > latest.born) {
-        return earliest;
-    } else {
-        return latest;
-    }});
+  const sortedScientists = [...scientists].sort((a, b) => b.born - a.born);
+
+  const latestBorn = sortedScientists[0];
 
   console.log(latestBorn);
 }
 
 longestAndSmallest.onclick = function() {
-  const longest = scientists.map(scientist => scientist.dead - scientist.born);
-  const shortest = scientists.map(scientist => scientist.dead - scientist.born);
+  const scientistToSortByAge = scientists.map(scientist => scientist.dead - scientist.born);
+  const ageSorted = scientistToSortByAge.sort();
 
-  console.log(ageSorted);
+  const longest = ageSorted[0];
+  
+  const shortest = ageSorted[11];
+
+  console.log(longest);
+  console.log(shortest);
 }
 
 lettersMatch.onclick = function() {
-  const lettersMatchFound =
+  scientists.filter(scientist => {
+    const nameLetter = scientist.name[0];
+    const surnameLetter = scientist.surname[0];
 
-  console.log(lettersMatchFound);
+    if(nameLetter === surnameLetter) {
+      console.log(true);
+    }
+  })
 }
