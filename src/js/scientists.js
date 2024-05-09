@@ -1,4 +1,5 @@
 import { scientists } from './utils/scientists-data';
+// .addEventListener('click', centuryFn)
 
 const century = document.getElementById('century');
 const einshtein = document.getElementById('einshtein');
@@ -9,23 +10,6 @@ const name = document.getElementById('name');
 const latest = document.getElementById('latest');
 const longestAndSmallest = document.getElementById('longestAndSmallest');
 const lettersMatch = document.getElementById('lettersMatch');
-
-// const filterBox = document.querySelectorAll('.scientist-card');
-
-// document.querySelector('.scientist-option-list').addEventListener('click', e => {
-//     if (e.target.className !== 'scientist-option-button'){
-//       return false;
-//     } 
-
-//     let filterClass = e.target.dataset['f'];
-    
-//     filterBox.forEach(elem => {
-//         elem.classList.remove('hide');
-//         if (!elem.classList.contains(filterClass) && filterClass !== 'all') {
-//             elem.classList.add('hide');
-//         }
-//     });
-// });
 
 const scientistList = document.querySelector('.scientist-card-list');
 
@@ -39,11 +23,21 @@ scientists.forEach((scientist, index) => {
   card.innerHTML = `<p class="scientist-card-text">${scientist.name} ${scientist.surname}<br>(${scientist.born}-${scientist.dead})</p>`;
   
   scientistList.appendChild(card);
+
+
+
+  century.onclick = function() {
+    const bornFiltered = scientists.filter(scientist => !(scientist.born >= 1800 && scientist.born < 1900));
+
+    console.log(bornFiltered);
+    // card.setAttribute('id', 'centuryFiltered')
+
+    // const hideCenturyFiltered = document.getElementById('centuryFiltered');
+
+    // hideCenturyFiltered.style.display = 'none';
+  }
 });
 
-century.onclick = function() {
-  // const bornFiltered = scientists.filter(scientist => !(scientist.born >= 1800 && scientist.born < 1900));
-}
 
 einshtein.onclick = function() {
   const einshteinFind = scientists.find(scientist => scientist.name === 'Albert');
