@@ -44,8 +44,8 @@ const calculateResult = () => {
   }
 
   else if (checkButton(calculatorButtons).includes("divide")) {
-    calculatorOutput.textContent = firstInputValue / secondInputValue;
-    if (isNaN(firstInputValue.secondInputValue)) {
+    calculatorOutput.textContent = (firstInputValue / secondInputValue).toFixed(1);
+    if (isNaN(firstInputValue / secondInputValue)) {
       calculatorOutput.textContent = 'Помилка'
     }
   }
