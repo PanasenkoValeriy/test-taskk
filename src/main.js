@@ -10,3 +10,4 @@ import "./js/three-numbers";
 import "./js/team";
 import "./js/scientists";
 import "./js/footer";
+import "./js/subscribe-modal";

@@ -1,0 +1,73 @@
+/* The Modal (background) */
+.modal {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    background-color: rgba(0, 0, 0, 0.4);
+    /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    /* 15% from the top and centered */
+    border: 1px solid #888;
+    width: 463px;
+    height: 245px;
+    flex-shrink: 0;
+    border-radius: 20px;
+    background: #FFF;
+}
+
+.close {
+    float: right;
+    margin: 30px 35px;
+    background-color: transparent;
+    width: 15px;
+    height: 15px;
+    flex-shrink: 0;
+    stroke-width: 1px;
+    stroke: #000;
+}
+
+
+.close:hover,
+.close:focus {
+    cursor: pointer;
+    outline: none;
+}
+
+.modal-subscribe-title {
+    color: #000;
+    text-align: center;
+    position: absolute;
+    margin-top: 83px;
+    margin-left: 138px;
+
+    text-align: center;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.subscribe-bcg-img {
+    position: absolute;
+    margin-top: 69px;
+    margin-left: 42px;
+    width: 378px;
+    height: 106px;
+    background-image: url('../img/modalbcg.png');
+    background-size: auto;
+}
