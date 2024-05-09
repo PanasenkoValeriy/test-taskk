@@ -1,0 +1,76 @@
+.dino-container {
+    width: 720px;
+    height: 240px;
+    margin: 0 auto;
+    margin-bottom: 36px;
+}
+
+.dino-overlay {
+    position: relative;
+    overflow: hidden;
+
+    width: 100%;
+    height: 100%;
+}
+
+.dino-score {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
+
+.game-over-window {
+    display: none;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.show {
+    display: block;
+}
+
+.dino-player {
+    --bottom: 0;
+    position: absolute;
+    left: 2%;
+    bottom: calc(var(--bottom) * 1%);
+
+    width: 50px;
+    height: 60px;
+}
+
+.dino-ground {
+    --left: 0;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    left: calc(var(--left) * 1%);
+}
+
+.dino-cactus {
+    position: absolute;
+    left: calc(var(--left) * 1%);
+    bottom: 0;
+
+    width: 40px;
+    height: 50px;
+}
+
+.dino-start-button {
+    display: block;
+    width: 150px;
+    height: 40px;
+    border-radius: 20px;
+    background-color: #d7d7d7;
+    margin: 0 auto;
+    transition: all 350ms linear;
+}
+
+.dino-start-button:hover {
+    background-color: #7e7e7e;
+    color: #fff;
+    
+}
