@@ -17,8 +17,8 @@
 
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
   
-  <script type="module" crossorigin src="/game-center/assets/index-5006503d.js"></script>
-  <link rel="stylesheet" href="/game-center/assets/index-2294ceb7.css">
+  <script type="module" crossorigin src="/game-center/assets/index-bf353956.js"></script>
+  <link rel="stylesheet" href="/game-center/assets/index-d7cb603f.css">
 </head>
 
 <body>
@@ -30,7 +30,7 @@
         <div class="logo__container">
           <!-- <img src="/img/logo.svg" alt="logo" class="logo__img" /> -->
           <svg class="logo__img">
-            <use href="/game-center/assets/symbol-defs-7a1000e3.svg#icon-logo-icon"></use>
+            <use href="/game-center/assets/symbol-defs-f0007ae6.svg#icon-logo-icon"></use>
           </svg>
         </div>
       </a>
@@ -52,8 +52,8 @@
             </li>
           </ul>
         </li>
-        <li class="nav__list__item"><a href="">Наша команда</a></li>
-        <li class="nav__list__item"><a href="">Контакти</a></li>
+        <li class="nav__list__item"><a href="#team">Наша команда</a></li>
+        <li class="nav__list__item"><a href="#footer">Контакти</a></li>
       </ul>
       <img
         src="/game-center/assets/day-mode-8d45d858.svg"
@@ -265,7 +265,7 @@
 </section>
 
       <hr class="acquaintance" id="line" noshade="" color="#000" />
-      <section class="team-section acquaintance">
+      <section class="team-section acquaintance" id="team">
     <h2 class="title">Наша команда</h2>
   
     <div class="swiper">
@@ -399,25 +399,35 @@
     </section>
 
 </div>
-      <div class="enter-modal">
-    <p class="enter-modal-text">Привіт! <br>
-      Ви потрапили на сайт інтерактивних ігор та завдань <br>
-      Надіємось, що вам сподобається і ви отримаєте позитивні емоції! <br>
-      Бажаємо Вам гарно провести час!
-    </p>
-    <div class="enter-modal-container">
-      <h3 class="enter-modal-title">Введіть своє ім’я:</h3>
-      <form id="enter-modal-form" autocomplete="off">
-        <input type="text" placeholder="Ваше ім’я...">
-        <button type="button" class="enter-modal-button">Зберегти</button>
-      </form>
+      <div class="modal-background">
+  <div class="enter-modal">
+      <button type="button" class="enter-modal-close">
+        <img src="../img/close.svg" alt="">
+      </button>
+      <p class="enter-modal-text">Привіт! <br>
+        Ви потрапили на сайт інтерактивних ігор та завдань <br>
+        Надіємось, що вам сподобається і ви отримаєте позитивні емоції! <br>
+        Бажаємо Вам гарно провести час!
+      </p>
+      <div class="enter-modal-container">
+        <h3 class="enter-modal-title">Введіть своє ім’я:</h3>
+        <form id="enter-modal-form" autocomplete="off">
+          <input type="text" placeholder="Ваше ім’я...">
+          <button type="button" class="enter-modal-button">Зберегти</button>
+        </form>
+      </div>
+      
+      <!-- <img src="../img/symbol-defs.svg#modal-icon-1" alt="" id="modal-icon-1">
+      <img src="../img/symbol-defs.svg#modal-icon-2" alt="" id="modal-icon-2">
+      <img src="../img/symbol-defs.svg#modal-icon-3" alt="" id="modal-icon-3">
+      <img src="../img/symbol-defs.svg#modal-icon-4" alt="" id="modal-icon-4"> -->
     </div>
-  </div>
+</div>
     </div>
   </main>
-  <div class="footer">
+  <div id="footer">
     <svg class="footer-logo-svg">
-        <use class="footer-icon" href="/game-center/assets/symbol-defs-7a1000e3.svg#icon-Group-128-1"></use>
+        <use class="footer-icon" href="/game-center/assets/symbol-defs-f0007ae6.svg#icon-Group-128-1"></use>
     </svg>
     <ul class="footer-list">
         <li class="footer-list-item">Тел: +38 (123) 456 78 90</li>
