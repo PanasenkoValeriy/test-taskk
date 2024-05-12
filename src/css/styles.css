@@ -19,7 +19,7 @@
 @import url('./layout/scientist.css');
 @import url('./layout/footer.css');
 @import url('./layout/subscribe-modal.css');
-@import url('./utils/enter-modal-window.css');
+@import url('./utils/enter-modal.css');
 
 :root {
   font-family: Inter, Avenir, Helvetica, Arial, sans-serif;

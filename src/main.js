@@ -11,3 +11,4 @@ import "./js/team";
 import "./js/scientists";
 import "./js/footer";
 import "./js/subscribe-modal";
+import "./js/enter-modal"
