@@ -61,7 +61,7 @@
     display: none;
     
     border-radius: 0px 0px 20px 20px;
-    border: 1px solid #000;
+    border: 1px solid var(--secondary__color);
     border-top: none;
     
     overflow: hidden;
@@ -87,6 +87,7 @@
 .submenu__btn {
     border: none;
     background-color: transparent;
+    color: var(--secondary__color);
 }
 
 .submenu__btn:hover {
