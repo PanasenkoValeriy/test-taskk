@@ -7,7 +7,7 @@ import {
 const dinosaur = document.getElementById('dino-player');
 
 const JUMP_SPEED = 0.45;
-const GRAVITY = 0.0025;
+const GRAVITY = 0.0020;
 const DINO_FRAME_COUNT = 2;
 const FRAME_TIME = 100;
 
