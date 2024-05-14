@@ -115,10 +115,6 @@ button {
 
 button:hover {
     outline: 1px solid rgb(18, 180, 18);
-
-    transition: all 350ms linear;
-    background-color: #7e7e7e;
-    color: #fff;
 }
 
 form {
