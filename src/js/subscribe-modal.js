@@ -21,3 +21,9 @@ window.addEventListener('click', function(event) {
     modal.style.display = "none";
   }
 })
+
+window.addEventListener('keydown', function(e) {
+  if (e.key === 'Escape') {
+    modal.style.display = "none";
+  }
+});
