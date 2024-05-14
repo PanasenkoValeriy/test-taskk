@@ -1,22 +1,29 @@
-<section class="time-calc-section">
-    <h2 class="time-title">Калькулятор часу</h2>
-    <div class="time-container">
-        <div class="input-box time-input-box">
-            <form id="time-form" autocomplete="off">
-                <input type="text" placeholder="Введіть число" class="time-input">
-                <button type="submit" class="search-button time-btn-js">
-                    <img class="lupa" src="/img/lupa.svg" alt="">
-                </button>
-            </form>
-        </div>
-        <svg class="time-dots" xmlns="http://www.w3.org/2000/svg" width="100" height="2" viewBox="0 0 100 2" fill="none">
-            <path d="M0 1H100" stroke="black" stroke-dasharray="2 2"/>
-        </svg>
-        <p class="time-text">
-            <span id="days"></span>
-            <span id="hours"></span>
-            <span id="minutes"></span>
-            <span id="seconds"></span>
-        </p>
+<section class="time-calc-section numerical" id="numbers">
+  <h2 class="time-title">Калькулятор часу</h2>
+  <div class="time-container">
+    <div class="input-box time-input-box">
+      <form id="time-form" autocomplete="off">
+        <input type="text" placeholder="Введіть число" class="time-input" />
+        <button type="submit" class="search-button time-btn-js">
+          <img class="lupa" src="/img/lupa.svg" alt="" />
+        </button>
+      </form>
     </div>
+    <svg
+      class="time-dots"
+      xmlns="http://www.w3.org/2000/svg"
+      width="100"
+      height="2"
+      viewBox="0 0 100 2"
+      fill="none"
+    >
+      <path d="M0 1H100" stroke="black" stroke-dasharray="2 2" />
+    </svg>
+    <p class="time-text">
+      <span id="days"></span>
+      <span id="hours"></span>
+      <span id="minutes"></span>
+      <span id="seconds"></span>
+    </p>
+  </div>
 </section>
