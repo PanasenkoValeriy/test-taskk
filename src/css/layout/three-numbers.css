@@ -6,7 +6,8 @@
 }
 
 .digits-title {
-    color: #000;
+    background-color: var(--main__color);
+    color: var(--secondary__color);
     font-family: "Montserrat Alternates";
     font-size: 16px;
     font-weight: 400;
@@ -32,7 +33,8 @@
 
 
 .digits-output {
-    color: #000;
+    background-color: var(--main__color);
+    color: var(--secondary__color);
 
     font-family: "Montserrat Alternates";
     font-size: 12px;

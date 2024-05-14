@@ -29,26 +29,28 @@ function converter() {
 
         days.textContent = `${daysConverter} дн.`;
         
-        // if (hoursConverter >= 10) {
-        //     hours.textContent = `${hoursConverter}:`;
-        // } else {
-        //     hours.textContent = `0${hoursConverter}:`;
-        // }
+        if (hoursConverter < 10) {
+            hours.textContent = `${hoursConverter}:`;
+        } else {
+            hours.textContent = `0${hoursConverter}:`;
+        }
     
-        // if (minutesConverter >= 10) {
-        //     minutes.textContent = `${minutesConverter}:`;
-        // } else {
-        //     minutes.textContent = `0${minutesConverter}:`;
-        // }
+        if (minutesConverter >= 10) {
+            minutes.textContent = `${minutesConverter}:`;
+        } else {
+            minutes.textContent = `0${minutesConverter}:`;
+        }
     
-        // if (secondsConverter >= 10) {
-        //     seconds.textContent = `${secondsConverter}`;
-        // } else {
-        //     seconds.textContent = `0${secondsConverter}`;
-        // }
+        if (secondsConverter >= 10) {
+            seconds.textContent = `${secondsConverter}`;
+        } else {
+            seconds.textContent = `0${secondsConverter}`;
+        }
         
+        
+
         result.style.color = '#000000';
-        result.textContent = `${daysConverter} дн. ${hoursConverter}:${minutesConverter}:${secondsConverter}`
+        result.textContent = `${daysConverter} дн. ${hoursConverter}:${minutesConverter}:${secondsConverter}`;
 
     } else {
         result.textContent = 'Введіть кількість хвилин!'

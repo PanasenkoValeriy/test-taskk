@@ -17,6 +17,7 @@ function onIconClick() {
 
 const filterBox = document.querySelectorAll('section, hr');
 // const filterBtn = document.querySelectorAll('.submenu__btn')
+// const interactive = document.querySelector('.interactive');
 
 document.querySelector('.submenu__list').addEventListener('click', e => {
     if (e.target.className !== 'submenu__btn'){

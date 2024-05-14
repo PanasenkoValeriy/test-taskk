@@ -7,14 +7,26 @@ body {
 }
 
 main {
-    background-image: url('../../img/background.png');
+    background-image: url('/img/background.png');
     background-size: cover;
 }
+
+
 
 .container {
     margin: 0 auto;
     width: 1090px;
     background-color: var(--main__color);
+}
+
+#mainTitle {
+    color: var(--secondary__color);
+    font-family: "Montserrat Alternates";
+    font-size: 24px;
+    font-weight: 400;
+
+    display: flex;
+    justify-content: center;
 }
 
 #line {
@@ -76,7 +88,7 @@ input {
     position: absolute;
     right: 0;
 
-    height: 34.5px;
+    height: 34px;
 }
 
 .lupa {
@@ -85,6 +97,8 @@ input {
     align-items: flex-start;
     gap: 10px;
     height: 15px;
+
+    color: var(--main__color);
 }
 
 
@@ -101,6 +115,10 @@ button {
 
 button:hover {
     outline: 1px solid rgb(18, 180, 18);
+
+    transition: all 350ms linear;
+    background-color: #7e7e7e;
+    color: #fff;
 }
 
 form {

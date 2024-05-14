@@ -25,7 +25,6 @@ scientists.forEach((scientist, index) => {
     card.classList.remove('hide');
     if(!(scientist.born >= 1800 && scientist.born < 1900)) {
       card.classList.add('hide');
-      // card.style.display = 'none';
     }
   }
 
