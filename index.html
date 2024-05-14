@@ -17,8 +17,8 @@
 
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
   
-  <script type="module" crossorigin src="/game-center/assets/index-bf353956.js"></script>
-  <link rel="stylesheet" href="/game-center/assets/index-d7cb603f.css">
+  <script type="module" crossorigin src="/game-center/assets/index-847c6987.js"></script>
+  <link rel="stylesheet" href="/game-center/assets/index-a366065d.css">
 </head>
 
 <body>
@@ -66,6 +66,30 @@
   </nav>
 </header>
 
+  <div class="modal-background">
+  <section class="enter-modal">
+      <button type="button" class="enter-modal-close">
+        <img src="../img/close.svg" alt="">
+      </button>
+      <p class="enter-modal-text">Привіт! <br>
+        Ви потрапили на сайт інтерактивних ігор та завдань <br>
+        Надіємось, що вам сподобається і ви отримаєте позитивні емоції! <br>
+        Бажаємо Вам гарно провести час!
+      </p>
+      <div class="enter-modal-container">
+        <h3 class="enter-modal-title">Введіть своє ім’я:</h3>
+        <form id="enter-modal-form" autocomplete="off">
+          <input type="text" id="enterInput" placeholder="Ваше ім’я...">
+          <button type="button" class="enter-modal-button" id="modalBtn">Зберегти</button>
+        </form>
+      </div>
+      
+      <!-- <img src="../img/symbol-defs.svg#modal-icon-1" alt="" id="modal-icon-1">
+      <img src="../img/symbol-defs.svg#modal-icon-2" alt="" id="modal-icon-2">
+      <img src="../img/symbol-defs.svg#modal-icon-3" alt="" id="modal-icon-3">
+      <img src="../img/symbol-defs.svg#modal-icon-4" alt="" id="modal-icon-4"> -->
+      </section>
+</div>
   <main>
     <div class="container">
       <h1 id="mainTitle">Популярні інтерактивні ігри</h1>
@@ -354,31 +378,31 @@
 
       <ul class="scientist-option-list">
             <li class="scientist-option-item">
-                <button onclick="century()" type="button" class="scientist-option-button" id="century">Які вчені народилися в 19 ст.</button>
+                <button type="button" class="scientist-option-button" id="century">Які вчені народилися в 19 ст.</button>
             </li>
             <li class="scientist-option-item">
-                <button onclick="einshtein()" type="button" class="scientist-option-button" id="einshtein">Знайти рік народження Albert Einshtein</button>
+                <button type="button" class="scientist-option-button" id="einshtein">Знайти рік народження Albert Einshtein</button>
             </li>
             <li class="scientist-option-item">
-                <button onclick="alphabet()" type="button" class="scientist-option-button" id="alphabet">Відсортувати вчених за алфавітом</button>
+                <button type="button" class="scientist-option-button" id="alphabet">Відсортувати вчених за алфавітом</button>
             </li>
             <li class="scientist-option-item">
-                <button onclick="surname()" type="button" class="scientist-option-button" id="surname">Знайти вчених, прізвища яких починаються на на літеру “С” </button>
+                <button type="button" class="scientist-option-button" id="surname">Знайти вчених, прізвища яких починаються на на літеру “С” </button>
             </li>
             <li class="scientist-option-item">
-                <button onclick="age()" type="button" class="scientist-option-button" id="age">Відсортувати вчених за кількістю прожитих років</button>
+                <button type="button" class="scientist-option-button" id="age">Відсортувати вчених за кількістю прожитих років</button>
             </li>
             <li class="scientist-option-item">
-                <button onclick="name()" type="button" class="scientist-option-button" id="name">Видалити всіх вчених, ім’я яких починається на “А”</button>
+                <button type="button" class="scientist-option-button" id="name">Видалити всіх вчених, ім’я яких починається на “А”</button>
             </li>
             <li class="scientist-option-item">
-                <button onclick="latest()" type="button" class="scientist-option-button" id="latest">Знайти вченого, який народився найпізніше</button>
+                <button type="button" class="scientist-option-button" id="latest">Знайти вченого, який народився найпізніше</button>
             </li>
             <li class="scientist-option-item">
-                <button onclick="longestAndSmallest()" type="button" class="scientist-option-button" id="longestAndSmallest">Знайти вченого, який прожив найдовше і вченого, <br> який прожив найменше</button>
+                <button type="button" class="scientist-option-button" id="longestAndSmallest">Знайти вченого, який прожив найдовше і вченого, <br> який прожив найменше</button>
             </li>
             <li class="scientist-option-item">
-                <button onclick="lettersMatch()" type="button" class="scientist-option-button" id="lettersMatch">Знайти вчених, в яких співпадають перші літери імені і прізвища</button>
+                <button type="button" class="scientist-option-button" id="lettersMatch">Знайти вчених, в яких співпадають перші літери імені і прізвища</button>
             </li>
         </ul>
     </div>
@@ -398,30 +422,6 @@
     </section>
 
 </div>
-      <div class="modal-background">
-  <div class="enter-modal">
-      <button type="button" class="enter-modal-close">
-        <img src="../img/close.svg" alt="">
-      </button>
-      <p class="enter-modal-text">Привіт! <br>
-        Ви потрапили на сайт інтерактивних ігор та завдань <br>
-        Надіємось, що вам сподобається і ви отримаєте позитивні емоції! <br>
-        Бажаємо Вам гарно провести час!
-      </p>
-      <div class="enter-modal-container">
-        <h3 class="enter-modal-title">Введіть своє ім’я:</h3>
-        <form id="enter-modal-form" autocomplete="off">
-          <input type="text" placeholder="Ваше ім’я...">
-          <button type="button" class="enter-modal-button">Зберегти</button>
-        </form>
-      </div>
-      
-      <!-- <img src="../img/symbol-defs.svg#modal-icon-1" alt="" id="modal-icon-1">
-      <img src="../img/symbol-defs.svg#modal-icon-2" alt="" id="modal-icon-2">
-      <img src="../img/symbol-defs.svg#modal-icon-3" alt="" id="modal-icon-3">
-      <img src="../img/symbol-defs.svg#modal-icon-4" alt="" id="modal-icon-4"> -->
-    </div>
-</div>
     </div>
   </main>
   <div id="footer">
@@ -435,7 +435,7 @@
         <li class="footer-list-item">Twitter: CodingMagic</li>
         <li class="footer-list-item">Instagram: CodingMagic</li>
     </ul>
-        <form class="footer-subscribe">
+        <form class="footer-subscribe" autocomplete="off">
             <input class="footer-input" placeholder='Ваша ел. адреса...'>
             <button type="button" class="footer-input-btn" id="openModal">Підписатись</button>
             <p class="footer-smalltext">*Підписавшись, Ви зможете ортимувати інформацію про новинки на сайті</p>
