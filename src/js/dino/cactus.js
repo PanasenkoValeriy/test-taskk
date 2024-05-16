@@ -3,6 +3,7 @@ import {
   incrementCustomProperty,
   setCustomProperty,
 } from './updateCustomProperty.js';
+import cactusImgUrl from '/img/dino-img/cactus.png'
 
 const worldEl = document.querySelector('.dino-overlay');
 
@@ -45,7 +46,7 @@ export function getCactusRects() {
 function createCactus() {
   const cactus = document.createElement('img');
   cactus.dataset.cactus = true;
-  cactus.src = '/img/dino-img/cactus.png';
+  cactus.src = cactusImgUrl;
   cactus.classList.add('dino-cactus');
   setCustomProperty(cactus, '--left', 100);
   worldEl.append(cactus);
