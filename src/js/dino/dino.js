@@ -5,8 +5,8 @@ import {
 } from './updateCustomProperty';
 import dinoLoseImgUrl from '../../img/dino-img/dino-lose.png';
 import dinoStationaryImgUrl from '../../img/dino-img/dino-stationary.png';
-// import dinoRun0ImgUrl from '../../img/dino-img/dino-run-0.png';
-// import dinoRun1ImgUrl from '../../img/dino-img/dino-run-1.png';
+import dinoRunImgUrl0 from '../../img/dino-img/dino-run-0.png';
+import dinoRunImgUrl1 from '../../img/dino-img/dino-run-1.png';
 
 const dinosaur = document.getElementById('dino-player');
 
@@ -52,7 +52,7 @@ function handleRun(delta, speedScale) {
 
   if (currentFrameTime >= FRAME_TIME) {
     dinoFrame = (dinoFrame + 1) % DINO_FRAME_COUNT;
-    dinosaur.src = `/img/dino-img/dino-run-${dinoFrame}.png`;
+    dinosaur.src = `https://github.com/pla1nn/game-center/blob/main/src/img/dino-img/dino-run-${dinoFrame}.png?raw=true`;
     currentFrameTime -= FRAME_TIME;
   }
 
