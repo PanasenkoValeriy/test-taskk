@@ -3,15 +3,27 @@
     justify-content: space-around;
 
     height: 220px;
+    background-color: var(--main__color);
+    color: var(--secondary__color);
+}
+
+
+.footer-icon {
+    stroke: var(--main__color);
+    fill: var(--main__color); 
 }
 
 .footer-logo-svg {
     margin: 75px;
+    stroke: var(--main__color);
+    fill: var(--main__color);
 }
 
 .footer-logo {
     width: 165px;
     height: 70px;
+    stroke: var(--main__color);
+    fill: var(--main__color);
 }
 
 .footer-list {
@@ -19,7 +31,7 @@
 }
 
 .footer-list-item {
-    color: #000;
+    color: var(--secondary__color);
     font-family: "Montserrat Alternates";
     font-size: 12px;
     font-style: normal;
@@ -42,13 +54,13 @@
 
 }
 
-.footer-subscribe > *:nth-child(1),
-.footer-subscribe > *:nth-child(2) {
-  grid-column: span 1;
+.footer-subscribe>*:nth-child(1),
+.footer-subscribe>*:nth-child(2) {
+    grid-column: span 1;
 }
 
-.footer-subscribe > *:nth-child(3) {
-  grid-column: span 2;
+.footer-subscribe>*:nth-child(3) {
+    grid-column: span 2;
 }
 
 
@@ -58,8 +70,8 @@
     align-items: flex-start;
     gap: 10px;
     border-radius: 20px;
-    background: #000;
-    color: #FFF;
+    background: var(--secondary__color);
+    color: var(--main__color);
     height: 35px;
 
     font-family: "Montserrat Alternates";
@@ -74,7 +86,7 @@
 }
 
 .footer-smalltext {
-    color: #000;
+    color: var(--secondary__color);
     font-family: "Montserrat Alternates";
     font-size: 6px;
     font-style: normal;
