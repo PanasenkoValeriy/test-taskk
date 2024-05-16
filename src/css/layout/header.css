@@ -7,11 +7,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 70px;
-}
-
-.logo {
-    color: var(--secondary__color);
+    padding: 21px 0;
 }
 
 .logo__container{
@@ -19,8 +15,6 @@
 }
 
 .logo__img { 
-    margin-right: 9px;
-    margin-top: 17px;
     width: 93px;
     height: 38px;
     /* fill: var(--secondary__color); */
@@ -32,7 +26,6 @@
     justify-content: space-between;
     align-items: center;
     gap: 50px;
-    margin-top: 17px; 
 }
 
 .interactive {

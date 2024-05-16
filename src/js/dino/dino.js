@@ -52,7 +52,7 @@ function handleRun(delta, speedScale) {
 
   if (currentFrameTime >= FRAME_TIME) {
     dinoFrame = (dinoFrame + 1) % DINO_FRAME_COUNT;
-    dinosaur.src = `https://github.com/pla1nn/game-center/blob/main/src/img/dino-img/dino-run-${dinoFrame}.png?raw=true`;
+    dinosaur.src = `/img/dino-img/dino-run-${dinoFrame}.png`;
     currentFrameTime -= FRAME_TIME;
   }
 
