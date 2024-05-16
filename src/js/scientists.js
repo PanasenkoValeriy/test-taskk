@@ -6,6 +6,7 @@ scientists.forEach((scientist, index) => {
   const card = document.createElement('li');
   card.classList.add('scientist-card');
   card.style.backgroundImage = `url('../img/scientists-img/${index + 1}.jpg')`;
+  // card.style.backgroundImage = `${scientist.img}`;
   card.style.backgroundSize = 'cover';
   card.innerHTML = `<p class="scientist-card-text">${scientist.name} ${scientist.surname}<br>(${scientist.born}-${scientist.dead})</p>`;
   
