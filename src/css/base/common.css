@@ -9,9 +9,8 @@ body {
 main {
     background-image: url('/img/background.png');
     background-size: cover;
+    background-color: #eee;
 }
-
-
 
 .container {
     margin: 0 auto;
@@ -24,9 +23,9 @@ main {
     font-family: "Montserrat Alternates";
     font-size: 24px;
     font-weight: 400;
+    padding-top: 36px;
 
-    display: flex;
-    justify-content: center;
+    text-align: center;
 }
 
 #line {

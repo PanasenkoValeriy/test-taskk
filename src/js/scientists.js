@@ -1,6 +1,6 @@
 import { scientists } from './utils/scientists-data';
 
-const buttons = document.querySelectorAll('.scientist-option-button')
+const buttons = document.querySelectorAll('.scientist-option-button');
 const scientistList = document.querySelector('.scientist-card-list');
 
 buttons.forEach((button) => {
