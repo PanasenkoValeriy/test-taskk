@@ -3,11 +3,15 @@ import {
   incrementCustomProperty,
   setCustomProperty,
 } from './updateCustomProperty';
+import dinoLoseImgUrl from '../../img/dino-img/dino-lose.png';
+import dinoStationaryImgUrl from '../../img/dino-img/dino-stationary.png';
+// import dinoRun0ImgUrl from '../../img/dino-img/dino-run-0.png';
+// import dinoRun1ImgUrl from '../../img/dino-img/dino-run-1.png';
 
 const dinosaur = document.getElementById('dino-player');
 
 const JUMP_SPEED = 0.45;
-const GRAVITY = 0.0025;
+const GRAVITY = 0.0020;
 const DINO_FRAME_COUNT = 2;
 const FRAME_TIME = 100;
 
@@ -37,12 +41,12 @@ export function getDinoRect() {
 }
 
 export function setDinoLose() {
-  dinosaur.src = '/img/dino-img/dino-lose.png';
+  dinosaur.src = dinoLoseImgUrl;
 }
 
 function handleRun(delta, speedScale) {
   if (isJumping) {
-    dinosaur.src = `/img/dino-img/dino-stationary.png`;
+    dinosaur.src = dinoStationaryImgUrl;
     return;
   }
 

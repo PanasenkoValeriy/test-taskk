@@ -1,13 +1,3 @@
-#mainTitle {
-    color: #000;
-    font-family: "Montserrat Alternates";
-    font-size: 24px;
-    font-weight: 400;
-
-    display: flex;
-    justify-content: center;
-}
-
 .check-title {
     margin-bottom: 36px;
 }
