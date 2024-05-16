@@ -1,6 +1,20 @@
 import { scientists } from './utils/scientists-data';
 
+const buttons = document.querySelectorAll('.scientist-option-button')
 const scientistList = document.querySelector('.scientist-card-list');
+
+buttons.forEach((button) => {
+  button.addEventListener("click", () => {
+    buttons.forEach((btn) => {
+      btn.classList.remove("active-calc-btn");
+    });
+    button.classList.toggle("active-calc-btn");
+
+    button.addEventListener('click', () => {
+      button.classList.toggle("active-calc-btn");
+    });
+  });
+});
 
 scientists.forEach((scientist, index) => {
   const card = document.createElement('li');
